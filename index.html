@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>Bananabel</title>
+
+
+
+    <!-- Custom styles for this template -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href"bower_components/jquery-ui/themes/smoothness/jquery-ui.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="velocity_assets/plugins/flexslider/flexslider.css">
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="velocity_assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/fresh-bootstrap-table.css">
+
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-select.css">
+    <base href="/">
+
+
+  </head>
+
+
+  <body ng-app="bananabelApp" ng-controller="MainController as main" >
+    <div id="siteWrapper">
+
+        <div id="siteViewport">
+            <bananabel-header></bananabel-header>
+            <div ui-view="contentArea"></div>
+
+        </div> <!--End of Site Viewport-->
+
+
+    </div> <!--End of Site Wrapper-->
+
+
+    <bananabel-footer></bananabel-footer>
+
+    <script src="bower_components/stamplay-js-sdk/dist/stamplay.min.js"></script>
+    <script>
+    Stamplay.init('bananabel');
+    </script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="javascript/lib/bootstrap-select.js"></script>
+    <script type="text/javascript" src="velocity_assets/plugins/jquery-migrate-1.2.1.min.js"></script>
+    
+    <script type="text/javascript" src="velocity_assets/plugins/bootstrap-hover-dropdown.min.js"></script>
+    <script type="text/javascript" src="velocity_assets/plugins/back-to-top.js"></script>
+    <script type="text/javascript" src="velocity_assets/plugins/jquery-placeholder/jquery.placeholder.js"></script>
+    <script type="text/javascript" src="velocity_assets/plugins/FitVids/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="velocity_assets/plugins/flexslider/jquery.flexslider-min.js"></script>     
+    <script type="text/javascript" src="velocity_assets/js/main.js"></script>
+    
+
+
+
+
+
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/ng-file-upload/ng-file-upload.js"></script>
+    <script src="bower_components/angular-stamplay/angular-stamplay.js"></script>
+    <script src="bower_components/angular-ui-router/angular-ui-router.js"></script>
+
+
+
+
+
+    
+    <script src="javascript/components/admin/admin.js"></script>
+    <script src="javascript/components/checkout/checkout.js"></script>
+    <script src="javascript/components/package/package.js"></script>
+
+
+    <script src="javascript/components/dashboard/dashboard.js"></script>
+    <script src="javascript/components/home/home.js"></script>
+    <script src="javascript/components/profile/profile.js"></script>
+    <script src="javascript/components/authenticate/authenticate.js"></script>
+
+
+    <script src="javascript/shared/UserService.js"></script>
+    <script src="javascript/shared/ProductService.js"></script>
+    <script src="javascript/shared/ShopService.js"></script>
+    <script src="javascript/shared/OrderService.js"></script>
+    <script src="javascript/shared/core/header.js"></script>
+    <script src="javascript/shared/core/footer.js"></script>
+
+
+    <script src="javascript/app.routes.js"></script>
+    <script src="javascript/app.module.js"></script>
+    <script src="javascript/directives/sharedDirectives.js"></script>
+
+
+    <script src="javascript/pages/vendorRegistration/vendorRegistration.js"></script>
+    <script src="javascript/pages/venuePage/venuePage.js"></script>
+    <script src="javascript/pages/vendorHome/vendorHome.js"></script>
+    <script src="javascript/pages/createPackage/createPackage.js"></script>
+   
+
+
+
+
+
+    
+  </body>
+
+</html>

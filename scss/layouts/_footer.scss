@@ -1,0 +1,99 @@
+@media #{$xs} {
+	.footer.footer {
+		padding-top: 0px;
+	}
+	.footer .footer-content {
+
+		font-family: Brandon;
+	    z-index: 0;
+	    background: -webkit-linear-gradient(90deg, #4f4360 10%, $darkpurple 90%); /* Chrome 10+, Saf5.1+ */
+	    background:    -moz-linear-gradient(90deg, #4f4360 10%, $darkpurple 90%); /* FF3.6+ */
+	    background:     -ms-linear-gradient(90deg, #4f4360 10%, $darkpurple 90%); /* IE10 */
+	    background:      -o-linear-gradient(90deg, #4f4360 10%, $darkpurple 90%); /* Opera 11.10+ */
+	    background:         linear-gradient(90deg, #4f4360 10%, $darkpurple 90%); /* W3C */
+		padding: 20px;
+		z-index: 0;
+		border-top: 1px solid $purple;
+		color: #ffffff;
+
+		ul.social.list-inline {
+			li a .fa{
+				color: #ffffff;
+				opacity: 1;
+				@include transition(0.5s all);
+			}
+
+			li a .fa.fa-circle{
+				font-size: 35px;
+				color: $purple;
+
+
+			}
+
+
+			li a .fa.fa-facebook{
+				color: #ffffff;
+			}
+
+			li a .fa.fa-twitter{
+				color: #ffffff;
+			}
+
+			li a .fa.fa-pinterest{
+				color: #ffffff;
+			}
+
+			li a .fa.fa-instagram{
+				color: #ffffff;
+			}
+
+			li a .fa.fa-google{
+				color: #ffffff;
+			}
+		}
+		.footer-col.connect .btn-cta-primary {
+			background-color: $lightpurple;
+			border: 1px solid #ffffff;
+			opacity: 1.0;
+			color: #ffffff;
+			border-radius: 5px;
+		}
+		h3.title {
+			font-family: Brandon-Bold;
+		}
+
+		input.form-control {
+			border-radius: 2px;
+			width: 100%;
+		}
+
+		hr {
+			border-top: 1px solid rgba(140,140,244,0.3);
+		}
+		.footer-col a {
+			color: $lightpurple;
+
+			&:hover {
+				color: #ffffff;
+			}
+		}
+		.list-unstyled {
+
+			li { 
+				color: $purple;
+				border-bottom: 1px solid rgba(255,255,255,0.1);
+								padding-bottom: 10px;
+			}
+		}
+
+			
+			
+	}
+
+}
+
+@media #{$sm} {
+	
+
+	
+}

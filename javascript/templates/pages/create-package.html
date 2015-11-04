@@ -1,0 +1,352 @@
+<div class="registrationWrapper">
+	  <form id="msform" ng-controller="createPackageCtrl">
+	  	<fieldset>
+	  		<h1>Create A Package</h1>
+
+	  		<h3 class="fs-subtitle">Key Information</h3>
+
+
+	  		<div class="form-row">
+	  			<input type="text" name="package_name" placeholder="Name of Package"/>
+	  		</div>
+
+
+	  		<div class="form-row">
+
+		  		<span class="bigicon" style="font-size:28px;"><i class="fa fa-dollar"></i></span>
+		  		<h6>The base price of a package is the default price a customer sees.</h6>
+
+		  		<div class="input-group"> 
+			  		<span class="input-group-addon">$</span>
+			  		<input type="number" value="1000" min="0" step="10" data-number-to-fixed="2" data-number-stepfactor="100"  name="base_price" class="currency" placeholder="Base Price" />
+		  		</div>
+
+	  		</div>
+
+	  		<div class="form-row">
+
+		  		<span class="bigicon" style="font-size:28px;"><i class="fa fa-clock-o"></i></span>
+		  		<select class="eventLength" placeholder='yolo'>
+		  			<option value="" selected disabled>Length Of Event</option>
+		  		    <option>1/2 Hour</option>
+		  		    <option>1 Hour</option>
+		  		    <option>2 Hours</option>
+		  		    <option>2 1/2 Hours</option>
+		  		    <option>3 Hours</option>
+		  		    <option>3 1/2 Hours</option>
+		  		    <option>4 Hours</option>
+		  		    <option>4 1/2 Hours</option>
+		  		    <option>5 Hours</option>		  		    
+		  		 </select>
+
+	  		</div>
+
+	  		<h3 class="fs-subtitle">Describe Your Package</h3>
+
+	  		<div class="form-row">
+		  		<span class="bigicon" style="font-size:28px;"><i class="fa fa-black-tie"></i></span>
+		  		<textarea placeholder="Describe the experience of this package."></textarea>
+	  		</div>
+
+	  		<div class="form-row">
+		  		<span class="bigicon" style="font-size:28px;"><i class="fa fa-cutlery"></i></span>
+		  		<textarea placeholder="Describe the food or drinks included with this package."></textarea>
+	  		</div>
+
+	  		<div class="form-row">
+		  		<span class="bigicon" style="font-size:28px;"><i class="fa fa-headphones"></i></span>
+		  		<textarea placeholder="Describe any entertainment or activities included with this package."></textarea>
+		  	</div>
+
+		  	<div class="form-row">
+		  		<span class="bigicon" style="font-size:28px;"><i class="fa fa-file-image-o"></i></span>
+		  		<h6>Upload a banner photo to help better showcase your this package.</h6>
+		  		<button class="btn btn-primary" ngf-select ng-model="file" name="file" ngf-pattern="'image/*'"
+		  		    accept="image/*" ngf-max-size="20MB" ngf-min-height="300" 
+		  		    ngf-resize="{width: 300, height: 300}">Upload Banner</button>
+		  		   <img ngf-thumbnail="file || '/thumb.jpg'" ngf-as-background="true">
+		  	</div>
+
+
+   		   	<h3 class="fs-subtitle">Guests</h3>
+
+
+
+   	  		<h2 class="fs-title" style="text-align: center;">Does your venue account for adults and children differently in terms of capacity?</h2>
+ 		   <div class="btn-group-vertical childrenAdultCapacity">
+ 		     <button type="button" class="btn btn-secondary difference">Yes, we do.</button>
+ 		     <button type="button" class="btn btn-secondary no-difference">No, we don't.</button>
+ 		   </div>
+
+ 		   
+
+ 		   <div class="form-row guestQuestion" id="childrenAdults">
+	  	  		<div class="container-fluid">
+		  	  		
+		  	  		<h4><i class="fa fa-child" style="margin-right: 10px;"></i>Children</h4>
+		  	  		<hr>
+
+		  	  		<div class="inputWrapper col-xs-12 col-sm-6">
+		  	  			<input type="text" name="min_children" placeholder="Mininum # of Children"/>
+		  	  		</div>
+		  	  		<div class="inputWrapper col-xs-12 col-sm-6">
+		  	  			<input type="text" name="max_children" placeholder="Maximum # of Children"/>
+		  	  		</div>
+		  	  	</div>
+
+
+	  	  		<h2 class="fs-title" ><span>ADDITIONAL CHILDREN:</span>  Do you charge additional children guests per child or by tiers?</h2>
+
+	  	  		<div class="btn-group-vertical tierQuestion">
+	  	  		  <button type="button" class="btn btn-secondary variable">Per Child</button>
+	  	  		  <button type="button" class="btn btn-secondary tiered">Per tiers of Children.</button>
+	  	  		</div>
+
+	  	  		<div class="form-row vtQuestion variableQuestion">
+	  	  			<h6>Cost Per Additional Child</h6>
+			  		<div class="input-group"> 
+				  		<span class="input-group-addon">$</span>
+				  		<input type="number" value="1000" min="0" step="10" data-number-to-fixed="2" data-number-stepfactor="100"  name="base_price" class="currency" placeholder="Base Price" />
+			  		</div>
+	  	  		</div>
+	  	  		<div class="form-row vtQuestion tieredQuestion">
+	  	  			<h4>tolo2</h4>
+	  	  		</div>
+
+	  	  		<h4><i class="fa fa-group" style="margin-right: 10px;"></i>Adults</h4>
+	  	  		<hr>
+	  	  		<div class="container-fluid">
+		  	  		<div class="inputWrapper col-xs-12 col-sm-6">
+		  	  			<input type="text" name="per_adult" placeholder="Minimum # of Adults"/>
+		  	  		</div>
+		  	  		<div class="inputWrapper col-xs-12 col-sm-6">
+		  	  		<input type="text" name="max_adults" placeholder="Maximum # of Adults"/>
+		  	  		</div>
+	  	  		</div>
+
+	  	  		<h2 class="fs-title" ><span>ADDITIONAL ADULTS:</span>  Do you charge additional adults guests per adult or by tiers?</h2>
+
+	  	  		<div class="btn-group-vertical tierQuestion">
+	  	  		  <button type="button" class="btn btn-secondary variable">Per Adult</button>
+	  	  		  <button type="button" class="btn btn-secondary tiered">Per tiers of Adults.</button>
+	  	  		</div>
+
+	  	  		<div class="form-row vtQuestion variableQuestion">
+	  	  			<h6>Cost Per Additonal Adult</h6>
+  			  		<div class="input-group"> 
+  				  		<span class="input-group-addon">$</span>
+  				  		<input type="number" value="1000" min="0" step="10" data-number-to-fixed="2" data-number-stepfactor="100"  name="base_price" class="currency" placeholder="Base Price" />
+  			  		</div>
+	  	  		</div>
+	  	  		<div class="form-row vtQuestion tieredQuestion">
+	  	  			<h4>tolo2</h4>
+	  	  		</div>
+
+  	  		</div>
+
+  	  		<div class="form-row guestQuestion" id="generalGuests">
+	  	  		<div class="container-fluid">
+		  	  		<div class="inputWrapper col-xs-12 col-sm-6">
+		  	  			<input type="text" name="min_guests" placeholder="Minimum # of Guests"/>
+		  	  		</div>
+		  	  		<div class="inputWrapper col-xs-12 col-sm-6">
+		  	  		<input type="text" name="max_guests" placeholder="Maximum # of Guests"/>
+		  	  		</div>
+	  	  		</div>
+
+	  	  		<h2 class="fs-title" ><span>ADDITIONAL GUESTS</span>  Do you charge additional guests per guest or by tiers?</h2>
+
+	  	  		<div class="btn-group-vertical tierQuestion">
+	  	  		  <button type="button" class="btn btn-secondary variable">Per Guest</button>
+	  	  		  <button type="button" class="btn btn-secondary tiered">Per tiers of Guests.</button>
+	  	  		</div>
+
+	  	  		<div class="form-row vtQuestion variableQuestion">
+	  	  			<h6>Cost Per Additional Guest</h6>
+	  	  			<div class="input-group"> 
+			  		<span class="input-group-addon">$</span>
+			  		<input type="number" value="1000" min="0" step="10" data-number-to-fixed="2" data-number-stepfactor="100"  name="base_price" class="currency" placeholder="Base Price" />
+
+		  		</div>
+
+	  	  		</div>
+	  	  		<div class="form-row vtQuestion tieredQuestion">
+	  	  			<h6 class="tieredPricing"><i class="fa fa-signal"></i>Additional Guest Tiered Pricing</h6>
+	  	  			<hr>
+
+	  	  			<div class="table-responsive tier-table">          
+	  	  			  <table class="table table-striped table-bordered">
+	  	  			    <thead>
+	  	  			      <tr>
+	  	  			        <th>#</th>
+	  	  			        <th>Tier Start</th>
+	  	  			        <th>Tier End</th>
+	  	  			        <th>$ Per Guest</th>
+	  	  			        <th>Add/Delete</th>
+	  	  			      </tr>
+	  	  			    </thead>
+	  	  			    <tbody>
+	  	  			      <tr>
+	  	  			        <td>1</td>
+	  	  			        <td>1 Guest</td>
+	  	  			        <td>20 Guests</td>
+	  	  			        <td>$50</td>
+	  	  			        <td><i class="fa fa-wrench"></i><i class="fa fa-minus-circle"></i></td> 		  
+	  	  			      </tr>
+	  	  			      <tr>
+	  	  			        <td>2</td>
+	  	  			        <td>21 Guests</td>
+	  	  			        <td>50 Guests</td>
+	  	  			        <td>$100</td>
+	  	  			        <td><i class="fa fa-wrench"></i><i class="fa fa-minus-circle"></i></td> 		  
+	  	  			      </tr>
+	  	  			      <tr>
+	  	  			        <td>3</td>
+	  	  			        <td>51 Guests</td>
+	  	  			        <td>100 Guests</td>
+	  	  			        <td>$200</td>
+	  	  			        <td><i class="fa fa-wrench"></i><i class="fa fa-minus-circle"></i></td> 		  
+	  	  			      </tr>
+	  	  			    </tbody>
+	  	  			  </table>
+	  	  			  </div>
+
+	  	  			<div class="form-row well">
+	  	  				<h2><i class="fa fa-signal"></i>CREATE NEXT TIER</h2>
+			  	  		<div class="container-fluid">
+				  	  		<div class="inputWrapper col-xs-12 col-sm-6">
+				  	  			<input type="text" name="min_guests" placeholder="Minimum # of Guests"/>
+				  	  		</div>
+				  	  		<div class="inputWrapper col-xs-12 col-sm-6">
+				  	  		<input type="text" name="max_guests" placeholder="Maximum # of Guests"/>
+				  	  		</div>
+			  	  		</div>
+
+			  	  		<h4>Cost Per Guest In This Tier</h4>
+	  	  		  		<div class="input-group"> 
+	  	  			  		<span class="input-group-addon">$</span>
+	  	  			  		<input type="number" value="1000" min="0" step="10" data-number-to-fixed="2" data-number-stepfactor="100"  name="base_price" class="currency" placeholder="Base Price" />
+	  	  		  		</div>
+	  	  		  		<button class="btn btn-primary center-block"><i class="fa fa-plus-circle"></i>ADD TIER</button>
+		  	  		</div>
+	  	  		</div>
+  	  		</div>
+
+
+
+  	  		<h3 class="fs-subtitle">Availability & Booking</h3>
+
+   	  		<h4>WEEKLY AVAILABILITY</h4>
+   	  		<hr>
+
+   	  		<h2 class="fs-title">Select your hours of operation for each day of the week.</h2>
+
+   	  		<div class="availability-daily monday">
+	   	  		<h3>
+	   	  			<span class="slider-time">10:00 AM</span> 
+	   	  		</h3>
+   	  		</div>
+
+
+   	  		<div class="availability-daily-connector">
+   	  		</div>
+   	  		<div class="availability-daily tuesday">
+   	  			<h5>Tuesday Hours</h5>
+	   	  		<div class="week-hours-range-slider"></div>
+	   	  		<h3><span class="slider-time">10:00 AM</span> - <span class="slider-time2">12:00 PM</span></h3>
+   	  		</div>
+   	  		<div class="availability-daily-connector">
+   	  		</div>
+   	  		<div class="availability-daily wednesday">
+   	  			<h5>Wednesday Hours</h5>
+	   	  		<div class="week-hours-range-slider"></div>
+	   	  		<h3><span class="slider-time">10:00 AM</span> - <span class="slider-time2">12:00 PM</span></h3>
+   	  		</div>
+   	  		<div class="availability-daily-connector">
+   	  		</div>
+   	  		<div class="availability-daily thursday">
+   	  			<h5>Thursday Hours</h5>
+	   	  		<div class="week-hours-range-slider"></div>
+	   	  		<h3><span class="slider-time">10:00 AM</span> - <span class="slider-time2">12:00 PM</span></h3>
+   	  		</div>
+   	  		<div class="availability-daily-connector">
+   	  		</div>
+   	  		<div class="availability-daily friday">
+   	  			<h5>Friday Hours</h5>
+	   	  		<div class="week-hours-range-slider"></div>
+	   	  		<h3><span class="slider-time">10:00 AM</span> - <span class="slider-time2">12:00 PM</span></h3>
+   	  		</div>
+   	  		<div class="availability-daily-connector">
+   	  		</div>
+   	  		<div class="availability-daily saturday">
+   	  			<h5>Saturday Hours</h5>
+	   	  		<div class="week-hours-range-slider"></div>
+	   	  		<h3><span class="slider-time">10:00 AM</span> - <span class="slider-time2">12:00 PM</span></h3>
+   	  		</div>
+   	  		<div class="availability-daily-connector">
+   	  		</div>
+   	  		<div class="availability-daily sunday">
+   	  			<h5>Sunday Hours</h5>
+	   	  		<div class="week-hours-range-slider"></div>
+	   	  		<h3><span class="slider-time">10:00 AM</span> - <span class="slider-time2">12:00 PM</span></h3>
+   	  		</div>
+
+
+   	  		<h4>SEASONAL AVAILABILITY AVAILABILITY</h4>
+   	  		<hr>
+
+   	  		<h2 class="fs-title">Select the date range or ranges that you are open for booking</h2>
+   	  		<button class="btn btn-primary center-block"><i class="fa fa-calendar-check-o"></i>SELECT SEASONAL AVAILABILITY</button>
+
+
+   	  		<h4>Instant Booking</h4>
+   	  			<hr>
+	  	  		<h2 class="fs-title" style="text-align: center;">Do you offer instant booking or do you require customers request a booking so you may approve?</h2>
+			   <div class="btn-group-vertical childrenAdultCapacity">
+			     <button type="button" class="btn btn-secondary difference">Yes, I want to allow instant booking.</button>
+			     <button type="button" class="btn btn-secondary no-difference">No, I want to review all booking requests.</button>
+		   </div>
+
+
+
+	  	</fieldset>
+
+	  </form>
+</div>
+<script>
+
+$('.eventLength').selectpicker();
+
+$(".btn-group-vertical button").click(function () {
+	if ($(".btn-group-vertical button").hasClass('active')) {
+		$(".btn-group-vertical button").removeClass('active');
+	}
+    $(this).toggleClass("active");
+
+
+	if ($(this).hasClass('difference')) {
+		$('.guestQuestion').removeClass('active');
+		$('.guestQuestion#childrenAdults').addClass('active');
+	}
+
+	if ($(this).hasClass('no-difference')) {
+		$('.guestQuestion').removeClass('active');
+		$('.guestQuestion#generalGuests').addClass('active');
+	}
+
+	if ($(this).hasClass('variable')) {
+		$('.vtQuestion').removeClass('active');
+		$('.variableQuestion').addClass('active');
+	}
+
+	if ($(this).hasClass('tiered')) {
+		$('.vtQuestion').removeClass('active');
+		$('.tieredQuestion').addClass('active');
+	}
+
+});
+
+
+
+
+</script>

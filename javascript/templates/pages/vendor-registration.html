@@ -1,0 +1,321 @@
+<div class="headline-bg login-headline-bg">
+</div><!--//headline-bg-->
+
+<section class="login-section access-section section registration">
+    <div class="container">
+        <div class="row">
+            <div class="form-box col-md-10 col-sm-12 col-xs-12 col-md-offset-1 col-sm-offset-0 xs-offset-0">     
+                <div class="form-box-inner" id="registrationBox">
+                    
+                    <div class="registrationWrapper">
+                        <form id="signupForm" ng-submit="authenticate.signup()">
+                              <div class="form-group">
+                                <label>Name</label>
+                                <input type="text" class="form-control" ng-model="authenticate.signupData.displayName" required>
+                              </div>
+
+                              <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" class="form-control" ng-model="authenticate.signupData.email" required>
+                              </div>
+
+                              <div class="form-group">
+                                <label>Password</label>
+                                <input type="password" class="form-control" ng-model="authenticate.signupData.password" required>
+                              </div>
+
+                              <button type="submit" class="btn btn-info">Sign Up</button>
+                            </form>
+
+                    	  <form id="msform" class="hidden">
+                    	  	<!-- progressbar -->
+
+                    	  	<!-- fieldsets -->
+                    	  	<fieldset>
+                    	  		<ul id="progressbar">
+                    	  			<li class="active">Contact Details</li>
+                    	  			<li>Your Business</li>
+                    	  			<li>1st Venue/Service</li>
+                    	  		</ul>
+                    	  		<h1><span>Welcome to</span><br>Bananabel!</h1>
+
+                    	  		<h2 class="fs-title">Thank you for your interest in Bananabel! To start adding your venues and services to our system, you must first create a vendor account. From your account, you'll be able to edit your venues and services, create packages for your events and services, and accept bookings from potential cusomters.
+                    	  			<hr>
+                    	  		Before we begin to add venues and services, we need some important information about the person managing your vendor account. Let's get started!
+                    	  		</h2>
+                    	  		<h3 class="fs-subtitle">Step 1. Contact Details</h3>
+
+                    	  		<span class="bigicon" style="font-size:28px; width: 10%;"><i class="fa fa-black-tie"></i></span>
+                    	  		<input type="text" name="full-name" placeholder="Enter your business' name" ng-model="authenticate.signupData.businessName" required />
+
+                    	  		<span class="bigicon" style="font-size:28px; width: 10%;"><i class="fa fa-user"></i></span>
+                    	  		<input type="text" name="full-name" placeholder="Enter your full name" ng-model="authenticate.signupData.businessOwner" required/>
+
+                    	  		<span class="bigicon" style="font-size:28px; width: 10%;"><i class="fa fa-phone"></i></span>
+                    	  		<input type="text" name="phone-number" placeholder="Enter Phone Number" ng-model="authenticate.signupData.businessPhone" required  />
+
+                    	  		<hr>
+
+                    	  		<span class="bigicon" style="font-size:28px;"><i class="fa fa-envelope"></i></span>
+                    	  		<h6>We will send booking requests and other communication about your account to this email address.</h6>
+                    	  		<input type="text" name="email" placeholder="Email" ng-model="authenticate.signupData.businessEmail" required />
+                    	  		
+
+                    	  		<span class="bigicon" style="font-size:28px;"><i class="fa fa-lock"></i></span>
+                    	  		<input type="password" name="pass" placeholder="Password" ng-model="authenticate.signupData.businessPassword" />
+
+                    	  		<span class="bigicon hidden" style="font-size:28px; width: 10%;"><i class="fa fa-check"></i></span>
+                    	  		<input class="hidden" type="password" name="cpass" placeholder="Confirm Password" required />
+
+                    	  		<hr>
+                    	  		<button type="submit" class="btn btn-success submit action-button center-block" name="next"  value="Finish!" />
+
+
+                    	  	</fieldset>
+
+
+                    	  	<fieldset>
+                    	  		<ul id="progressbar">
+                    	  			<li class="active">Contact Details</li>
+                    	  			<li>Your Business</li>
+                    	  			<li>1st Venue/Service</li>
+                    	  		</ul>
+                    	  		<h3 class="fs-subtitle">Step 2. Your Business</h3>
+                    	  		<h2 class="fs-title">Thank you for that vital info. Now, let's begin adding your first venue or service. You may add other venues or services later.</h2>
+                    	  		<hr>
+                      		   <div class="btn-group-vertical">
+                      		     <button type="button" class="btn btn-primary btn-venueOrService">I want to add a <b>venue</b> first. </button>
+                      		     <button type="button" class="btn btn-primary btn-venueOrService">I want to add a <b>service</b> first.</button>
+                      		   </div>
+
+                      		   <hr>
+                      		   <input type="button" class="btn btn-success previous action-button center-block" name="previous"  value="Previous" />
+                      		   <input type="button" class="btn btn-success next action-button center-block" name="next"  value="Next" />
+
+                    	  	</fieldset>
+
+
+                    	  	<fieldset>
+                    	  		<ul id="progressbar">
+                    	  			<li class="active">Contact Details</li>
+                    	  			<li>Your Business</li>
+                    	  			<li>1st Venue/Service</li>
+                    	  		</ul>
+                    	  		<h3 class="fs-subtitle">Step 3. Your First Venue</h3>
+
+                    	  		<h4>Basic Venue Info</h4>
+                    	  		<hr>
+                    	  		<span class="bigicon" style="font-size:28px;"><i class="fa fa-gift"></i></span>
+                    	  		<input type="text" name="vname" placeholder="Venue Name" />
+
+                    	  		<span class="bigicon" style="font-size:28px;"><i class="fa fa-map"></i></span>
+                    	  		<input type="text" name="vaddress" placeholder="Venue Address" />
+
+                    	  		<span class="bigicon" style="font-size:28px;"><i class="fa fa-phone"></i></span>
+                    	  		<input type="tel" name="phone-number" placeholder="Enter Phone Number" value="5163613103" maxlength="10"/>
+
+                    	  		<span class="bigicon" style="font-size:28px;"><i class="fa fa-clock-o"></i></span>
+                    	  		<input type="text" name="maxhours" placeholder="Maximum Duration(Hours)" />
+
+                    	  		<span class="bigicon" style="font-size:28px;"><i class="fa fa-group"></i></span>
+                    	  		<input type="text" name="maxhours" placeholder="Maximum Capacity" />
+
+
+
+
+                    	  		<h4>Venue Details</h4>
+                    	  		<hr>
+                    	  		<h2 class="fs-title">To assist with how well our users find your venue, we need to tell us a good amount of information about your venue. These are the fields users will be using to filter their venue searches. The following fields can be edited later - so don't sweat too much - but accuracy is very important.</h2>
+
+                    	  		<h6 class="venueDetails">How would you best describe your venue? For user experience purposes, choose one.</h6>
+                    	  		<select class="selectpickerForm" multiple  id="editVenue" title='VENUE TYPE'>
+                    	  		    <optgroup label="Adult Themed">
+                    	  		      <option>Boat</option>
+                    	  		      <option>Party Venue</option>
+                    	  		      <option>Lazy Steve</option>
+                    	  		    </optgroup>
+                    	  		    <optgroup label="Kid Themed">
+                    	  		      <option>Lots of Options to Show</option>
+                    	  		      <option>Lots of Options to Show</option>
+                    	  		      <option>Lots of Options to Show</option>
+                    	  		      <option>Lots of Options to Show</option>
+                    	  		      <option>Lots of Options to Show</option>
+                    	  		      <option>Lots of Options to Show</option>
+                    	  		    </optgroup>
+                    	  		</select>
+
+                    	  		<h6 class="venueDetails">What activities do you offer? Check any/all that apply.</h6>
+                    	  		<select  id="editVenue"  class="selectpickerForm" multiple title='VENUE ACTIVITIES'>
+                    	  		    <optgroup label="Condiments">
+                    	  		      <option>Mustard</option>
+                    	  		      <option>Ketchup</option>
+                    	  		      <option>Relish</option>
+                    	  		    </optgroup>
+                    	  		    <optgroup label="Breads">
+                    	  		      <option>Plain</option>
+                    	  		      <option>Steamed</option>
+                    	  		      <option>Toasted</option>
+                    	  		    </optgroup>
+                    	  		</select>
+
+                    	  		<h6 class="venueDetails">What types of events can be hosted at your venue? Check all that apply.</h6>
+                    	  		<select class="selectpickerForm" multiple title='EVENTS HOSTED' style="margin-bottom: 20px;">
+                    	  		    <optgroup label="Condiments">
+                    	  		      <option>Mustard</option>
+                    	  		      <option>Ketchup</option>
+                    	  		      <option>Relish</option>
+                    	  		    </optgroup>
+                    	  		    <optgroup label="Breads">
+                    	  		      <option>Plain</option>
+                    	  		      <option>Steamed</option>
+                    	  		      <option>Toasted</option>
+                    	  		    </optgroup>
+                    	  		</select>
+
+
+                    	  		<h4>Children and Adults</h4>
+                    	  		<hr>
+                    	  		<h2 class="fs-title">Does your venue account for adults and children differently in terms of capacity?</h2>
+                      		   <div class="btn-group-vertical childrenAdultCapacity">
+                      		     <button type="button" class="btn btn-primary btn-venueOrService difference">Yes, we do.</button>
+                      		     <button type="button" class="btn btn-primary btn-venueOrService nodifference">No, we don't.</button>
+                      		   </div>
+
+
+                      		   	<div class="optionalChildAdultQuestion">
+                    	   	  		<h2 class="fs-title">Becuase you count for both children and adults separately, can you enter the maximum number of adults and the maximum number of children below.?</h2>
+                    	   	  		<span class="bigicon" style="font-size:28px;"><i class="fa fa-child"></i></span>
+                    	   	  		<input type="text" name="maxchildren" placeholder="Max # Of Children" />
+
+                    	   	  		<span class="bigicon" style="font-size:28px;"><i class="fa fa-group"></i></span>
+                    	   	  		<input type="text" name="maxadults" placeholder="Max # Of Adults"/>
+                       	  		</div>
+
+                       	  		<h4>Final Questions</h4>
+                       	  		<hr>
+
+                    	  		<h2 class="fs-title">Do you offer rental of an entire facility?</h2>
+                      		   <div class="btn-group-vertical">
+                      		     <button type="button" class="btn btn-primary btn-venueOrService">Yes, we do.</button>
+                      		     <button type="button" class="btn btn-primary btn-venueOrService">No, we don't.</button>
+                      		   </div>
+
+                      		   <h2 class="fs-title">Do you offer a private room for events? (i.e. the guests of the party will have a designated area not open to other people not attend)?</h2>
+                      		   <div class="btn-group-vertical">
+                      		     <button type="button" class="btn btn-primary btn-venueOrService">Yes, we do.</button>
+                      		     <button type="button" class="btn btn-primary btn-venueOrService">No, we don't.</button>
+                      		   </div>
+
+                      		   <hr>
+                      		   <input type="button" class="btn btn-success previous action-button center-block" name="previous"  value="Previous" />
+                      		   <input type="button" class="btn btn-success submit action-button center-block" name="next"  value="Finish!" />
+
+                    	  	</fieldset>
+                    	  </form>
+                    </div>
+                </div><!--//form-box-inner-->
+            </div><!--//form-box-->
+        </div><!--//row-->
+
+    </div><!--//container-->
+</section>
+
+
+
+
+
+<script>
+var current_fs, next_fs, previous_fs; //fieldsets
+var left, opacity, scale; //fieldset properties which we will animate
+var animating; //flag to prevent quick multi-click glitches
+
+$(".next").click(function(){
+
+		
+		if(animating) return false;
+		animating = true;
+
+		
+		current_fs = $(this).parent();
+		next_fs = $(this).parent().next();
+		
+		//activate next step on progressbar using the index of next_fs
+		$("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+		
+		//show the next fieldset
+		next_fs.delay(300).show(500); 
+		//hide the current fieldset with style
+
+		current_fs.animate({opacity: 0}, {
+			step: function(now, mx) {
+				//as the opacity of current_fs reduces to 0 - stored in "now"
+				//1. scale current_fs down to 80%
+				scale = 1 - (1 - now) * 0.2;
+				//2. bring next_fs from the right(50%)
+				left = (now * 50)+"%";
+				//3. increase opacity of next_fs to 1 as it moves in
+				opacity = 1 - now;
+				current_fs.css({'transform': 'scale('+scale+')'});
+				next_fs.css({'left': left, 'opacity': opacity});
+			}, 
+			duration: 500, 
+			complete: function(){
+				current_fs.hide();
+				animating = false;
+			}, 
+			//this comes from the custom easing plugin
+			easing: 'easeInOutBack'
+		});
+
+
+
+	});
+
+	$(".previous").click(function(){
+		if(animating) return false;
+		animating = true;
+		
+		current_fs = $(this).parent();
+		previous_fs = $(this).parent().prev();
+		
+		//de-activate current step on progressbar
+		$("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+		
+
+		previous_fs.delay(300).show(500); 
+		//hide the current fieldset with style
+
+		//hide the current fieldset with style
+		current_fs.animate({opacity: 0}, {
+			step: function(now, mx) {
+				//as the opacity of current_fs reduces to 0 - stored in "now"
+				//1. scale previous_fs from 80% to 100%
+				scale = 0.8 + (1 - now) * 0.2;
+				//2. take current_fs to the right(50%) - from 0%
+				left = ((1-now) * 50)+"%";
+				//3. increase opacity of previous_fs to 1 as it moves in
+				opacity = 1 - now;
+				current_fs.css({'left': left});
+				previous_fs.css({'transform': 'scale('+scale+')', 'opacity': opacity});
+			}, 
+			duration: 500, 
+			complete: function(){
+				current_fs.hide();
+				animating = false;
+			}, 
+			//this comes from the custom easing plugin
+			easing: 'easeInOutBack'
+		});
+
+
+	});
+	
+
+
+	$(".submit").click(function(){
+		return false;
+	});
+
+	$('.selectpickerForm').selectpicker();
+
+</script>

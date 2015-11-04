@@ -1,0 +1,627 @@
+@media #{$xs} {
+
+	#siteViewport {
+
+
+
+	
+
+		#registrationBox {
+			padding: 0px;
+		}
+
+		#msform {
+
+			.form-row {
+				margin-top: 20px;
+			}
+
+
+
+			h1 {
+				font-size: 16px;
+				text-transform: uppercase;
+				color: $purple;
+				text-align: center;
+				letter-spacing: 0.1em;
+				padding-bottom: 5px;
+				width: 100%;
+				color: #ffffff;
+				padding:20px;
+				background: -webkit-linear-gradient(90deg, #9086ef 10%, #b3aae8 90%); /* Chrome 10+, Saf5.1+ */
+				background:    -moz-linear-gradient(90deg, #fc00ff 10%, #00dbde 90%); /* FF3.6+ */
+				background:     -ms-linear-gradient(90deg, #fc00ff 10%, #00dbde 90%); /* IE10 */
+				background:      -o-linear-gradient(90deg, #fc00ff 10%, #00dbde 90%); /* Opera 11.10+ */
+				background:         linear-gradient(90deg, #9086ef 10%, #b3aae8 90%); /* W3C */
+				border-radius: 3px;
+				font-family: Brandon-bold;
+				margin-bottom: 30px;
+				box-shadow: 5px 8px darken($purple, 10%);
+	 			line-height: 1.5em;
+
+				span {
+					font-family: Brandon;
+				}
+			}
+
+
+			h4 {
+				color: $green;
+				font-family: Brandon-Bold;
+				font-size: 23px;
+				margin-top: 50px;
+			}
+
+			h6 {
+				color: $green;
+				font-family: Brandon-Bold;
+				font-size: 14px;
+			}
+
+			h6.venueDetails {
+				margin-top: 30px;
+			}
+
+
+
+
+
+
+			width: 100%;
+			text-align: center;
+
+
+			.fs-title {
+				font-size: 18px;
+				line-height: 1.3em;
+				color: #000000;
+				margin-bottom: 20px;
+				text-align: center;
+				color: grey;
+				letter-spacing: 0em;
+				margin-top: 30px;
+
+				span {
+					font-family: Brandon-Bold;
+					color: $purple;
+					letter-spacing: 0.2em;
+				}
+			}
+
+
+			.fs-subtitle {
+				font-weight: normal;
+				font-size: 24px;
+				color: #ffffff;
+				background-color: $green;
+				font-family: Brandon-Bold;
+				padding: 10px;
+				border-radius: 5px;
+				width: 100%;
+				@include transform(translateX(-50%));
+				margin-left: 50%;
+				margin-top: 60px;
+
+				margin-bottom: 20px;
+			}
+
+			.btn-group-vertical.tierQuestion button.active.btn.btn-secondary, .btn-group-vertical.childrenAdultCapacity button.active.btn.btn-secondary{
+				background-color: $purple;
+				color: #ffffff;
+				
+			}
+
+			.tier-table {
+				border-radius: 5px;
+				.table-striped > tbody > tr:nth-of-type(odd) {
+					background-color: #f0eff9;
+
+
+				}
+
+				thead {
+					tr {
+						background-color: $darkpurple;
+						th {
+							color: #ffffff;
+						}
+
+					}
+				}
+				
+				td {
+					text-align: left;
+
+					
+					i {
+						font-size:18px;
+					}
+					i.fa-wrench {
+						color: $green;
+						margin-right: 10px;
+					}
+
+					i.fa-minus-circle {
+						color: red;
+					}
+				}
+			}
+
+			h6 {
+				color: $purple;
+				text-align: center;
+			}
+
+
+			h6.tieredPricing {
+				color: $purple;
+				text-align: center;
+				font-size: 24px;
+
+				i {
+					margin-right: 5px;
+				}
+			}
+
+			.btn-group-vertical.tierQuestion button.btn.btn-secondary, button.btn.btn-secondary{
+				background-color: #ffffff;
+				color: $purple;
+				font-size: 18px;
+				padding: 15px;
+				font-family: Brandon-Bold;
+				margin-bottom: 0px;
+				border: 1px solid $purple;
+				width: 100%;
+			}
+
+			.form-row.well{
+				h2 {
+					color: gray;
+					text-align: center;
+					font-size: 22px;
+					margin-top: 0px;
+					margin-bottom: 20px;
+					font-family: Brandon-Bold;
+					letter-spacing: 0.2em;
+				}
+
+				h4 {
+					color: gray;
+					text-align: center;
+					font-size: 18px;
+					font-family: Brandon-Bold;
+					margin-top: 30px;
+				}
+
+				button.btn-primary.center-block {
+					margin-top: 25px;
+				}
+			}
+
+			.form-row.guestQuestion, .form-row.vtQuestion {
+				display: none;
+				margin-top: 0;
+			}
+
+			.form-row.guestQuestion.active, .form-row.vtQuestion.active {
+				display: block;
+			}
+
+			/*progressbar*/
+			#progressbar {
+				margin-bottom: 30px;
+				padding-left: 0px;
+				overflow: hidden;
+				counter-reset: step;
+				border: 1px solid rgba(144,134,239,0.2);
+				border-radius: 3px;
+				padding-top: 10px;
+				width: 100%;
+				padding-bottom: 10px;
+				background-color: rgba(255,255,255,0.8);
+			}
+			#progressbar li {
+				list-style-type: none;
+				color: $purple;
+				letter-spacing: 0.1em;
+				font-family: Brandon-Bold;
+				text-transform: uppercase;
+				font-size: 8px;
+				width: 33.33%;
+				float: left;
+				position: relative;
+			}
+			#progressbar li:before {
+				content: counter(step);
+				counter-increment: step;
+				width: 20px;
+				line-height: 20px;
+				display: block;
+				font-size: 10px;
+				color: #ffffff;
+				background: $purple;
+				border-radius: 3px;
+				margin: 0 auto 5px auto;
+			}
+			/*progressbar connectors*/
+			#progressbar li:after {
+				content: '';
+				width: 100%;
+				height: 2px;
+				background: $purple;
+				position: absolute;
+				left: -50%;
+				top: 9px;
+				z-index: -1; /*put it behind the numbers*/
+			}
+			#progressbar li:first-child:after {
+				/*connector not needed before the first step*/
+				content: none; 
+			}
+			/*marking active/completed steps green*/
+			/*The number of the step and the connector before it = green*/
+			#progressbar li.active:before,  #progressbar li.active:after{
+				background: #ffffff;
+				border: 1px solid $purple;
+				color: $purple;
+				font-family: Brandon-Bold;
+			}
+
+			.btn.btn-success {
+				font-family: Brandon-Bold;
+				letter-spacing: 0.2em;
+				text-align: center;
+				color: #ffffff;
+				font-size: 24px;
+				background: -webkit-linear-gradient(90deg, #9086ef 10%, #b3aae8 90%); /* Chrome 10+, Saf5.1+ */
+				background:    -moz-linear-gradient(90deg, #fc00ff 10%, #00dbde 90%); /* FF3.6+ */
+				background:     -ms-linear-gradient(90deg, #fc00ff 10%, #00dbde 90%); /* IE10 */
+				background:      -o-linear-gradient(90deg, #fc00ff 10%, #00dbde 90%); /* Opera 11.10+ */
+				background:         linear-gradient(90deg, #9086ef 10%, #b3aae8 90%); /* W3C */
+				box-shadow: 5px 5px darken($purple,10%);
+				border: 1px solid silver;
+				margin-top: 0px;
+				padding-top: 20px;
+				padding-bottom: 20px;
+				margin-bottom: 10px;
+				width: 80%;
+			}
+
+			.btn-group-vertical {
+				margin-bottom: 30px;
+				button.btn.btn-primary {
+					font-size: 10px;
+					background-color: $green;
+					border: 1px solid #ffffff;
+					color: #ffffff;
+					@include transition(0.5s all);
+					border-radius: 5px;
+
+					&:hover {
+						border: 1px solid $green;
+						background-color: #ffffff;
+						color: $green;
+
+					}
+				}
+
+				button.btn.btn-primary.active {
+					border: 1px solid $green;
+					background-color: #ffffff;
+					color: $green;
+				}
+			}
+
+			span.bigicon {
+					color: $green;
+				}
+
+			#editVenue {
+				width: 100%;
+			}
+			input, textarea {
+				padding: 15px;
+				border: 1px solid #ccc;
+				border-radius: 3px;
+				margin-bottom: 10px;
+				width: 100%;
+				box-sizing: border-box;
+				color: #2C3E50;
+				font-size: 18px;
+				margin: 0px;
+				display: inline;
+				text-align: center;
+			}
+
+			textarea {
+				padding: 30px;
+			}
+
+			.btn-group.bootstrap-select.eventLength  {
+				width: 100%;
+				text-align: center;
+
+				button {
+					padding: 15px;
+
+					span {
+						text-align: center;
+						font-size: 18px;
+						color: #2C3E50;
+
+					}
+				}
+			}
+
+			input.col-sm-6 {
+				width: 50%;
+			}
+
+		}
+		#msform fieldset {
+			background: -webkit-linear-gradient(90deg, #fafcfb 10%, #FFFFFF 90%); /* Chrome 10+, Saf5.1+ */
+			 background:    -moz-linear-gradient(90deg, #fafcfb 10%, #FFFFFF 90%); /* FF3.6+ */
+			 background:     -ms-linear-gradient(90deg, #fafcfb 10%, #FFFFFF 90%); /* IE10 */
+			 background:      -o-linear-gradient(90deg, #fafcfb 10%, #FFFFFF 90%); /* Opera 11.10+ */
+			 background:         linear-gradient(90deg, #fafcfb 10%, #FFFFFF 90%); /* W3C */
+			border: 0 none;
+			border-radius: 3px;
+			box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+			padding: 20px 30px;
+			box-sizing: border-box;
+		}
+		/*Hide all except first fieldset*/
+		#msform fieldset:not(:first-of-type) {
+			display: none;
+		}
+		/*inputs*/
+		/*buttons*/
+		#msform .action-button {
+			width: 100px;
+			background: $green;
+			font-weight: bold;
+			color: white;
+			border: 0 none;
+			border-radius: 5px;
+			cursor: pointer;
+			padding: 10px 5px;
+			margin: 10px 5px;
+			@include transition(0.5s all);
+			border: 2px solid $purple;
+		}
+		#msform .action-button:hover, #msform .action-button:focus {
+			background: #ffffff;
+			color: $purple;
+			border: 2px solid $purple;
+		}
+		/*headings*/
+
+		.registrationWrapper {
+			padding: 10px;
+			
+
+
+			fieldset {
+				h2 {
+					color: $green;
+					font-family: Brandon;
+					letter-spacing: 0.1em;
+				}
+
+				.fs-subtitle {
+					color: grey;
+					font-size: 18px;
+					margin-top: 30px;
+				}
+			}
+
+			#vendor-registration-form {
+				h2 {
+					color: $green;
+					font-family: Brandon-bold;
+					font-size: 18px;
+					margin-top: 15px;
+					margin-bottom: 20px;
+					text-align: center;
+					background-color: $green;
+					color: #ffffff;
+					border-radius: 8px;
+					width: 60%;
+					margin-left: 50%;
+					@include transform(translateX(-50%));
+					padding: 10px;
+				}
+
+				.form-group {
+					margin-top: 25px;
+					span {
+						color: $purple;
+					}
+				}
+				span.bigicon {
+					color: $green;
+				}
+
+				h6 {
+					text-align: center;
+
+					.btn.btn-success {
+						background-color: $purple;
+						text-transform: uppercase;
+						font-family: Brandon-Bold;
+						letter-spacing: 0.2em;
+						border: 1px solid #ffffff;
+						font-size: 25px;
+					}
+				}
+			}
+		}
+
+	}
+
+}
+
+@media #{$sm} {
+	#siteViewport {
+
+		.registrationWrapper {
+			padding: 0px;
+
+			#msform {
+				/*progressbar*/
+				#progressbar {
+					margin-bottom: 30px;
+					padding-left: 0px;
+					overflow: hidden;
+					counter-reset: step;
+					border: 1px solid rgba(144,134,239,0.2);
+					border-radius: 3px;
+					padding-top: 10px;
+					width: 100%;
+					padding-bottom: 10px;
+					background-color: rgba(255,255,255,0.8);
+				}
+				#progressbar li {
+					list-style-type: none;
+					color: $purple;
+					letter-spacing: 0.1em;
+					font-family: Brandon-Bold;
+					text-transform: uppercase;
+					font-size: 8px;
+					width: 33.33%;
+					float: left;
+					position: relative;
+				}
+				#progressbar li:before {
+					content: counter(step);
+					counter-increment: step;
+					width: 20px;
+					line-height: 20px;
+					display: block;
+					font-size: 10px;
+					color: #ffffff;
+					background: $purple;
+					border-radius: 3px;
+					margin: 0 auto 5px auto;
+				}
+				/*progressbar connectors*/
+				#progressbar li:after {
+					content: '';
+					width: 100%;
+					height: 2px;
+					background: $purple;
+					position: absolute;
+					left: -50%;
+					top: 9px;
+					z-index: -1; /*put it behind the numbers*/
+				}
+				#progressbar li:first-child:after {
+					/*connector not needed before the first step*/
+					content: none; 
+				}
+				/*marking active/completed steps green*/
+				/*The number of the step and the connector before it = green*/
+				#progressbar li.active:before,  #progressbar li.active:after{
+					background: #ffffff;
+					border: 1px solid $purple;
+					color: $purple;
+					font-family: Brandon-Bold;
+				}
+
+				h1 {
+
+					font-size: 25px;
+					letter-spacing: 0.3em;
+				}
+
+			}
+		}
+
+	}
+}
+
+
+@media #{$smExtra} {
+	#siteViewport {
+		.registrationWrapper {
+			#msform {
+				/*progressbar*/
+				#progressbar {
+					margin-bottom: 30px;
+					padding-left: 0px;
+					overflow: hidden;
+					counter-reset: step;
+					border: 1px solid rgba(144,134,239,0.2);
+					border-radius: 3px;
+					padding-top: 15px;
+					width: 100%;
+					padding-bottom: 10px;
+					background-color: rgba(255,255,255,0.8);
+				}
+				#progressbar li {
+					list-style-type: none;
+					color: $purple;
+					letter-spacing: 0.1em;
+					font-family: Brandon-Bold;
+					text-transform: uppercase;
+					font-size: 15px;
+					width: 33.33%;
+					float: left;
+					position: relative;
+				}
+				#progressbar li:before {
+					content: counter(step);
+					counter-increment: step;
+					width: 30px;
+					line-height: 30px;
+					display: block;
+					font-size: 15px;
+					color: #ffffff;
+					background: $purple;
+					border-radius: 3px;
+					margin: 0 auto 5px auto;
+				}
+				/*progressbar connectors*/
+				#progressbar li:after {
+					content: '';
+					width: 100%;
+					height: 2px;
+					background: $purple;
+					position: absolute;
+					left: -50%;
+					top: 9px;
+					z-index: -1; /*put it behind the numbers*/
+				}
+				#progressbar li:first-child:after {
+					/*connector not needed before the first step*/
+					content: none; 
+				}
+				/*marking active/completed steps green*/
+				/*The number of the step and the connector before it = green*/
+				#progressbar li.active:before,  #progressbar li.active:after{
+					background: #ffffff;
+					border: 1px solid $purple;
+					color: $purple;
+					font-family: Brandon-Bold;
+				}
+
+			}
+		}
+	}
+}
+
+@media #{$md} {
+	#siteViewport {
+
+		.registrationWrapper {
+			
+
+		}
+
+	}
+}
+
+
+@media #{$lg} {
+
+}

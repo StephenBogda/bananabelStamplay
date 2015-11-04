@@ -1,0 +1,174 @@
+@media #{$xs} {
+
+	.userHubContainer {
+		background-color: $green;
+
+			.userHubWelcome.col-xs-12 {
+				color: #ffffff;
+				text-shadow:1px 1px #000000;
+				font-family: Brandon-Bold;
+				text-align: center;
+		}
+	}
+
+	.invitationsContainer {
+		margin: 0 20px;
+
+		.invitationsWrapper {
+			border: 1px solid $purple;
+			background-color: rgba(255,255,255,0.8);
+			padding: 10px;
+			margin-top: 25px;
+			margin-bottom: 50px;
+
+			i {
+				margin-right: 5px;
+			}
+
+			h1 {
+				font-size: 30px;
+				text-align: center;
+				font-family: Brandon-Bold;
+				color: $green;
+			}
+
+			.time-location {
+				color: gray;
+				text-align: uppercase;
+				letter-spacing: 0.2em;
+				text-align: center;
+			}
+
+			.locationArea {
+				width: 100%;
+				height: 50px;
+				margin-bottom: 30px;
+
+				h3 {
+					text-align: center;
+				}
+
+				.list-group {
+
+					.list-group-item {
+
+						img {
+							width: 100px;
+							height: 100px;
+							margin-right: 20px;
+							border: 1px solid $purple;
+						}
+
+						h4 {
+							font-size: 22px;
+							text-align: right;
+							font-family: Brandon-Bold;
+						}
+
+						span {
+							font-size: 24px;
+							color: gray;
+							text-align: right;
+
+							i {
+								margin-right: 8px;
+								&.fa-credit-card {
+									margin-right: 0;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			h4 {
+				color: $purple;
+				text-align: center;
+				margin-top: 20px;
+			}
+
+			.buttonGroupRsvp {
+				width: 100%;
+				margin-bottom: 10px;
+
+				button {
+					padding: 10px 5px;
+					font-size: 10px;
+					font-family: Brandon-Bold;
+				}
+			}
+
+			.groupButton {
+				width: 100%;
+				background-color: $green;
+				font-size: 16px;
+				padding: 10px;
+				font-family: Brandon-Bold;
+				letter-spacing: 0.1em;
+				margin-bottom: 20px;
+			}
+
+			p.lead {
+				font-family: Brandon-Bold;
+			}
+
+			.well.policies p {
+				font-size: 20px;
+			}
+
+			.well.comment {
+
+				textarea {
+					padding: 30px;
+				}
+			}
+		}
+	}
+}
+
+@media #{$sm} {
+	.invitationsWrapper {
+		border: 1px solid $purple;
+		-webkit-border-radius: 15px;
+		background-color: rgba(255,255,255,0.8);
+		padding: 20px;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		margin-left: 50%;
+		-webkit-transform: translateX(-50%);
+	}
+}
+@media #{$md} {
+
+
+	.invitationsWrapper {
+		#partyTitle {
+			font-size: 45px;
+			text-align: center;
+			font-family: Brandon-Bold;
+			color: $green;
+		}
+		.time-location{
+			font-size: 24px;
+			margin-top: 7px;
+		}
+		h4 {
+			font-size: 30px;
+		}
+
+		p {
+			font-size: 22px;
+		}
+
+		#venueName {
+			font-size: 40px;
+		}
+
+		span.pull-right {
+			margin-bottom: 20px;
+		}
+	}
+}
+@media #{$lg} {
+
+}

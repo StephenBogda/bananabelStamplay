@@ -1,0 +1,39 @@
+@media #{$xs} {
+
+	#siteViewport {
+		#msform.addPackage {
+			h6 {
+				color: silver;
+				font-size: 18px;
+			}
+
+			#progressbar li {
+				width: 25%;
+			}
+
+			.container-fluid {
+				padding: 0px;
+
+				.inputWrapper {
+					textarea {
+						height: 200px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media #{$sm} {
+
+}
+
+
+@media #{$md} {
+
+}
+
+
+@media #{$lg} {
+
+}

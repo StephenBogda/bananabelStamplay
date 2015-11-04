@@ -1,0 +1,64 @@
+@media #{$xs} {
+
+	#msform {
+		fieldset {
+			h5 {
+				font-size: 19px;
+				color: #ffffff;
+				background: -webkit-linear-gradient(90deg, #9086ef 10%, #b3aae8 90%); /* Chrome 10+, Saf5.1+ */
+				background:    -moz-linear-gradient(90deg, #9086ef 10%, #b3aae8 90%); /* FF3.6+ */
+				background:     -ms-linear-gradient(90deg, #9086ef 10%, #b3aae8  90%); /* IE10 */
+				background:      -o-linear-gradient(90deg, #9086ef 10%, #b3aae8  90%); /* Opera 11.10+ */
+				background:         linear-gradient(90deg, #9086ef 10%, #b3aae8 90%); /* W3C */
+				font-family: Brandon-Bold;
+			}
+		}
+	}
+
+	.availability-daily.sunday {
+		margin-bottom: 60px;
+	}
+
+	.availability-daily {
+		width: 90%;
+		margin-left: 5%;
+		border: 1px solid rgba(144,134,239,0.5);
+		background-color: #ffffff;
+		border-radius: 5px;
+		box-shadow: 5px 8px darken($purple, 10%);
+
+
+		.week-hours-range-slider {
+			margin-left: 5%;
+			margin-right: 5%;
+		}
+
+		h3 {
+			color: #9086ef;
+			letter-spacing: 0.2em;
+			font-size: 14px;
+		}
+	}
+
+	.availability-daily-connector {
+		width: 2px;
+		background-color: #9086ef;
+		margin: 0 auto;
+		height: 60px;
+	}
+	
+}
+
+@media #{$sm} {
+
+}
+
+
+@media #{$md} {
+
+}
+
+
+@media #{$lg} {
+
+}

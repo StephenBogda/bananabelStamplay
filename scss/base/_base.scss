@@ -1,0 +1,153 @@
+html {
+	-webkit-font-smoothing: antialiased;
+	image-rendering: crisp-edges;
+	overflow-x:hidden;
+	min-height: 100%;
+	width: 100%;
+	overflow-y: auto;
+	font-family: Brandon;
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	  margin: 0 0 -656px;
+	  font-family: Brandon;
+	  background-color: #eff9e8;
+
+}
+
+a[ui-sref]  { cursor:pointer; }
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+  border-color: rgba(126, 239, 104, 0.8);
+  box-shadow:none;
+  outline: 0 none;
+}
+
+body.modal-open {
+	padding-right: 0px !important; 
+}
+
+#favoritesModal {
+	padding-right: 0px !important;
+}
+
+a {
+	text-decoration: none;
+	color: $green;
+	-webkit-transition: 0.5s;
+	cursor: pointer;
+
+	&:hover {
+		color: $purple;
+		text-decoration: none;
+	}
+}
+
+
+
+
+@media #{$xs} {
+
+
+	.footer10 {
+		position: absolute;
+		    left: 0;
+		    bottom: 0;
+		    height: 100px;
+		    width: 100%;
+		    background-color: #000000;
+	}
+
+
+	#siteWrapper {
+		position: relative;
+		overflow: hidden;
+		min-height: 100%;
+
+
+		#siteViewport {
+
+			position: relative;
+			min-height: 100%;
+			-webkit-transform: translateX(0);
+			transform: translateX(0);
+			-webkit-transition: .3s ease-in all;
+			transition: .3s ease-in all;
+
+
+
+			#topStripes {
+				background: url("../img/header/top-stripes.png") repeat;
+				height: 8px;
+				width: 45%;
+				margin-left: 55%;
+				z-index: 500000000000;
+				position: absolute;
+				top: 0%;
+
+
+				#borderMask {
+					width: 100%;
+					border-bottom: 1px solid #ffffff;
+					height: 8px;
+					position: absolute;
+					top: 0%;
+
+				}
+			}
+
+		}
+
+	}
+
+	#topStripesGreen {
+		background: $green;
+		height: 7px;
+		width: 55%;
+		position: absolute;
+		top: 0%;
+	}
+
+
+}
+
+
+@media #{$md} {
+	#siteWrapper {
+
+		#siteViewport {
+
+			#topStripes {
+				width: 55%;
+				margin-left: 45%;
+
+			}
+
+		}
+
+	}
+
+	#topStripesGreen {
+		width: 45%;
+	}
+}
+
+

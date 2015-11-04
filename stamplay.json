@@ -1,0 +1,10 @@
+{
+  "appId": "bananabel",
+  "apiKey": "6ab9f455c13482207fdb16b4dd7d545acdb8dd1abe973394ba2d4e81312ab1ac",
+  "public": "./",
+  "ignore": [
+    "stamplay.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}

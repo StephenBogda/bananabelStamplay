@@ -1,0 +1,87 @@
+
+@media #{$xs} {
+
+	
+
+	.pull-right .dropdown-menu {
+		background-color: $lightpurple;
+		border-radius: 5px;
+		border: 1px solid rgba(255,255,255,1);
+		right: 15px;
+		margin-top: 10px;
+		width: 220px;
+		@include transition(0.5s all);
+
+
+		li.menuButton:hover i.fa-dollar, li.menuButton:hover i.fa-envelope, li.menuButton:hover i.fa-bell {
+			@include transform(translateX(-10px));
+			@include transition(0.5s all);
+			color: $purple;
+
+		}
+
+		li.menuButton:hover {
+					@include transition(0.5s all);
+
+		}
+
+		li.menuButton {
+			@include transition(0.5s all);
+
+			span {
+				color: $darkpurple;
+			}
+		}
+
+
+		.dropdown-toggle i.fa.fa-caret-up {
+			top: 20%;
+			position: absolute;
+
+		}
+
+
+
+		li {
+			padding-top: 10px;
+			padding-bottom: 10px;
+			font-size: 16px;
+			text-align: center;
+			color: #ffffff;
+			font-family: Brandon-Bold;
+			@include transition(0.5s all);
+			border-bottom: 1px solid rgba(255,255,255,0.2);
+
+			&:hover {
+				color:$purple;
+				background-color: #ffffff;
+			}
+
+			i {
+				margin-right: 7px;
+			}
+		}
+
+		.menuButton {
+			position: relative;
+		}
+
+	
+
+		
+	}
+}
+
+@media #{$sm} {
+}
+
+@media #{$smExtra} {
+
+
+}
+
+
+@media #{$md} {
+	
+
+}

@@ -1,0 +1,83 @@
+
+    <!-- Brand and toggle get grouped for better mobile display -->
+    
+    <vendor-home-nav></vendor-home-nav>
+   
+    <!-- Collect the nav links, forms, and other content for toggling -->
+
+     <div class="vendorHomeWrapper container-fluid">
+          
+          <div ui-view="panel"></div>
+         
+     </div>
+</div>
+<script>
+$(function(){
+   $(".publishButton").click(function () {
+      $(this).html(function(i, text){
+          return text === "<i class='fa fa-thumbs-up'></i> Publish To Public" ? "UNPUBLISH" : "<i class='fa fa-thumbs-up'></i> PUBLISHED";
+      })
+   });
+
+   $(".btn-group > .btn").click(function(){
+       $(this).addClass("active").siblings().removeClass("active");
+   });
+
+   $(".panel-footer").click(function() {
+           var $this = $(this);
+
+           $this.toggleClass("expanded");
+
+           if ($this.hasClass("expanded")) {
+               $this.html("<i class='fa fa-chevron-circle-up'></i>Collapse");
+           } else {
+               $this.html("<i class='fa fa-chevron-circle-down'></i>VIEW PACKAGES & MORE");
+           }
+       });
+
+
+   $(".chevronButton").click(function(){
+       $(this).toggleClass("active").find("i").toggleClass('fa-chevron-circle-down fa-chevron-circle-up');
+
+   });
+
+   $('.eventLength').selectpicker();
+
+   $(".btn-group-vertical button").click(function () {
+   	if ($(".btn-group-vertical button").hasClass('active')) {
+   		$(".btn-group-vertical button").removeClass('active');
+   	}
+       $(this).toggleClass("active");
+
+
+   	if ($(this).hasClass('difference')) {
+   		$('.guestQuestion').removeClass('active');
+   		$('.guestQuestion#childrenAdults').addClass('active');
+   	}
+
+   	if ($(this).hasClass('no-difference')) {
+   		$('.guestQuestion').removeClass('active');
+   		$('.guestQuestion#generalGuests').addClass('active');
+   	}
+
+   	if ($(this).hasClass('variable')) {
+   		$('.vtQuestion').removeClass('active');
+   		$('.variableQuestion').addClass('active');
+   	}
+
+   	if ($(this).hasClass('tiered')) {
+   		$('.vtQuestion').removeClass('active');
+   		$('.tieredQuestion').addClass('active');
+   	}
+
+   });
+
+
+   $(document).ready(function () {
+     $(".navbar-nav li.pageSwitch").click(function(event) {
+       $(".navbar-collapse").collapse('hide');
+     });
+   });
+
+})
+</script>

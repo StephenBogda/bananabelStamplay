@@ -1,0 +1,49 @@
+<div id="topStripesGreen"></div>
+<div id="topStripes">
+  <div id="borderMask"></div>
+</div>
+
+
+
+<header class="container-fluid">
+  <a ui-sref="businessHome.account" >
+    <div id="brand" class="col-xs-7"></div>
+  </a>
+
+
+  <div class="toggle-nav col-xs-3 headerButton mobileUserNavButton avatar pull-right nav-item dropdown"  ng-click="state = !state" >
+
+
+    <a  ng-show="currentUser.id"    class="avatar center-block dropdown-toggle" data-toggle="dropdown">
+      <div ng-init="state=false" class="img-container center-block" >
+        <img ng-class="{'active' : state}" class="img-circle img-responsive" src="img/header/userAvatar.png">
+
+        <i ng-class="{'active' : state}" class="fa fa-caret-down"></i>
+        <i ng-class="{'active' : state}" class="fa fa-times-circle-o"></i>
+      </div>
+    </a>
+    <ul class="dropdown-menu">
+
+        <li class="menuButton">
+
+          <i class="fa fa-dollar"></i><span>0</span> New Orders
+        </li>
+        <li class="menuButton">
+          <i class="fa fa-envelope"></i><span>3</span> Messages
+        </li>
+        <li class="menuButton">
+          <i class="fa fa-bell"></i><span>0</span> Alerts
+        </li>
+        <li>Edit Account</li>
+        <li>Order History</li>   
+        <li>FAQ</li>
+        <li><a ng-click="main.logout()">SIGN OUT</a></li>      
+    </ul>       
+
+     <button type="submit" ng-show="!currentUser.id" ui-sref="businessRegistration" class="btn center-block btn-cta-primary signup">
+      <i class="fa fa-user-plus"></i>JOIN
+    </button>
+  </div>
+
+</header>
+

@@ -1,0 +1,650 @@
+@media #{$xs} {
+
+	section.login-section.section.access-section {
+		border: 1px solid $purple;
+	}
+	.h2.title {
+		color: $purple;
+	}
+	.btn.btn-block.btn-cta-primary {
+		border: 1px solid $purple;
+		color: $darkpurple;
+		background-color: $lightpurple;
+		text-transform: uppercase;
+		letter-spacing: 0.2em;
+		font-size: 18px;
+		border-radius: 5px;
+
+		&:hover {
+			background-color: $purple;
+			color: #ffffff;
+		}
+	}
+
+	input.form-control:focus {
+		border: 2px solid $green;
+	}
+
+	input.form-control:active {
+		border: 2px solid $green;
+	}
+	#siteViewport {
+		.faq.section {
+			background-color: transparent;
+		}
+		#msform.vendor-help fieldset {
+			background-color: $green;
+
+			.panel-heading {
+				background-color: #f5f5f5;
+			}
+			h4 {
+				margin-top: 5px;
+				font-family: Brandon;
+				text-align: left;
+				font-size: 18px;
+			}
+
+			.panel-body {
+				padding-top: 10px;
+				text-align: left;
+			}
+		}
+	}
+
+	h2.title.faq {
+		color: $purple;
+		margin-top: 15px;
+		border-bottom: 1px solid $purple;
+		padding-bottom: 15px;
+		background-color: transparent;
+		padding-top: 30px;
+	}
+
+	section.faq.section {
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+	#inboxTab, #ordersTab {
+		.infoBanner {
+			width: 100%;
+			margin-bottom: 30px;
+			padding: 20px;
+			border-radius: 5px;
+			border: 1px solid #ffffff;
+			color: #ffffff;
+			background: -webkit-linear-gradient(90deg, #9086ef 10%, #b3aae8 90%); /* Chrome 10+, Saf5.1+ */
+			background:    -moz-linear-gradient(90deg, #fc00ff 10%, #00dbde 90%); /* FF3.6+ */
+			background:     -ms-linear-gradient(90deg, #fc00ff 10%, #00dbde 90%); /* IE10 */
+			background:      -o-linear-gradient(90deg, #fc00ff 10%, #00dbde 90%); /* Opera 11.10+ */
+			background:         linear-gradient(90deg, #9086ef 10%, #b3aae8 90%); /* W3C */
+
+			.signup-form {
+				padding: 10px 0px 0px 0px;
+				width: 100%;
+			}
+			h6 {
+				margin: 0;
+				text-align: center;
+
+				img.img-responsive {
+					width: 18%;
+					margin-left: 50%;
+					@include transform(translateX(-50%));
+				}
+
+				i {
+					font-size: 125px;
+					margin-top: 15px;
+				}
+			}
+
+			h5 {
+				font-family: Brandon-Bold;
+				color: #ffffff;
+			}
+
+			p {
+				text-align: center;
+				padding: 0px;
+			}
+		}
+	}
+	.pointsOfInterestTabs {
+		width:100%;
+
+		li {
+			font-family: Brandon-Bold;
+		}
+		li.active {
+			border-top: none;
+
+			a i, a span{
+				color: $green;
+			}
+		}
+
+		li.help {
+			border-right: 1px solid #eeeeee;
+		}
+	}
+
+
+	.vendorHomeWrapper {
+		padding-top: 30px;
+
+		.tab-content {
+
+			.well.business {
+				.btn-group.bootstrap-select.eventLength  {
+					width: 100%;
+					text-align: center;
+					background-color: rgba(255,255,255,0.5);
+
+					button {
+						padding: 15px;
+						background-color: rgba(255,255,255,0.6);
+
+
+						span {
+							text-align: center;
+							font-size: 18px;
+							color: #2C3E50;
+							letter-spacing: 0.3em;
+							font-family: Brandon-Bold;
+							color: $purple;
+							text-shadow: 2px 2px 4px #ffffff;
+
+						}
+					}
+				}
+
+				cursor: pointer;
+				color: $green;
+				text-align: center;
+				background-image: url("../img/searchList/620loft.png");
+				background-size: cover;
+				border: 2px solid #ffffff;
+				padding-top: 50px;
+				padding-bottom: 50px;
+				
+
+				@include transition(0.5s all);
+				&:hover {
+					color: #ffffff;
+					background-color: $green;
+
+					h3 {
+						background-color: rgba(255,255,255,1);
+
+					}
+				}
+
+				h3 {
+					font-family: Brandon-Bold;
+					font-size: 28px;
+					color: #ffffff;
+					text-shadow: 3px 3px 3px #000000;
+					background-color: rgba(255,255,255,0.4);
+					padding-top: 10px;
+					padding-bottom: 10px;
+					border-radius: 5px;
+					@include transition(0.5s all);
+				}
+			}
+
+			nav {
+			background-color: $darkpurple;
+			color: #ffffff;
+			border-radius: 5px;
+
+				.navbar-brand  {
+					color: #ffffff;
+					font-size: 16px;
+					-top: 10px;
+					img {
+						display: none;
+					}
+				}
+
+				ul.navbar-nav.venueNavToggle {
+					padding-right: 15px;
+					
+				}
+
+				.collapse.navbar-collapse.venueNav {
+					ul.nav.navbar-nav {
+						li {
+							a { 
+							color: #ffffff;
+							} 
+						}
+					}
+				}
+			}
+
+
+			.panel-group {
+				border: 1px solid $purple;
+				border-radius: 5px;
+
+				.panel-default.panel {
+					margin-top: 0px;
+
+					.panel-footer {
+						background-color: #eadff4;
+						color: $darkpurple;
+						text-align: center;
+						font-size: 15px;
+						letter-spacing: 0.3em;
+						border-top: 1px solid #ffffff;
+						cursor: pointer;
+						@include transition(0.5s all);
+
+						i {
+							margin-right: 10px;
+						}
+
+						&:hover {
+							color: $purple;
+							background-color: #ffffff;
+						}
+					}
+
+					.panel-heading {
+						padding: 10px;
+						background-color: #f8f5fc;
+						margin-top: 0px;
+
+
+						h2.panel-title {
+							letter-spacing: 0.2em;
+							font-size: 24px;
+							font-family: Brandon-Bold;
+							text-transform: uppercase;
+							margin-top: 5px;
+							margin-bottom: 10px;
+							text-align: center;
+
+
+						}
+
+						button.businessEntryButton.publishButton.btn-block.btn {
+							margin-top: 10px;
+							padding: 10px;
+							font-size: 12px;
+							background-color: #ffffff;
+							color: $darkpurple;
+							border: 1px solid $darkpurple;
+							letter-spacing: 0.3em;
+							text-transform: uppercase;
+							&:hover {
+								color: #ffffff;
+								background-color: $green;
+							}
+						}
+
+						button.businessEntryButton.btn-block.btn {
+							margin-top: 10px;
+							padding: 10px;
+							font-size: 12px;
+							background-color: $darkpurple;
+							color: #ffffff;
+							letter-spacing: 0.3em;
+							text-transform: uppercase;
+							@include transition(0.5s all);
+
+							&:hover {
+								background-color: lighten($darkpurple, 10%);
+
+							}
+						}
+
+						hr {
+							border-top: 1px solid #ffffff;
+						}
+
+
+						.btn-group.vendorOptionNav {
+							button.btn.btn-sm.btn-default {
+								width: 50%;
+								background-color: $darkpurple;
+								color: #ffffff;
+								border: 1px solid #ffffff;
+								padding: 10px;
+								font-size: 17px;
+
+								&:hover, &.active {
+									background-color: $purple;
+									color: #ffffff;
+								}
+							}
+						}
+
+						button.btn-block.btn-default.chevronButton{
+							background-color: #ffffff;
+							color: $darkpurple;	
+							border: 1px solid rgba(0,0,0,0.3);	
+							margin-top: 10px;
+
+						}
+
+						button.btn-block.btn-default.chevronButton.active {
+							background-color: $darkpurple;	
+							color: #ffffff;
+							box-shadow: 0px 1px 0px darken($purple, 10%);
+						}
+					}
+
+					.panel-collapse.vendorOption {
+						padding: 5px;
+						padding-top: 20px;
+						background-color: #f8f5fc;
+
+						button.publishButton.btn-block.btn.btn-primary {
+							font-size: 12px;
+							font-family: Brandon;
+							margin-top: 5px;
+							background-color: $purple;
+							letter-spacing: 0.2em;
+							padding: 10px;
+						}
+
+						.panel.panel-default.packages {
+	
+							margin-top: 20px;
+							border: 1px solid #ffffff;
+
+
+
+							.panel-heading {
+								padding: 10px;
+								background-color: #d8c7e5;
+								color: #75707c;
+								text-transform: uppercase;
+								text-align: center;
+								font-size: 14px;
+								letter-spacing: 0.2em;
+								color: #ffffff;
+							}
+						}
+
+						.panel-body p {							color: #75707c;
+							color: #75707c;
+							font-family: Brandon;
+							font-size: 16px;
+							line-height: 1.3em;
+							text-align: center;
+							color: $purple;
+							margin-bottom: 20px;
+						}
+
+						button.btn.btn-default.btn-block {
+							background-color: $purple;
+							color: #ffffff;
+							padding: 10px;
+							letter-spacing: 0.3em;
+							font-size: 12px;
+
+							&:hover {
+								color: $purple;
+								border: 1px solid $purple;
+								background-color: #ffffff;
+							}
+						}
+
+
+						.list-group {
+							margin: 15px;
+
+							h5 {
+								font-size: 22px;
+								margin-top: 0px;
+								color: $darkpurple;
+								margin-bottom: 0px;
+							}
+
+							li {
+								padding: 10px 5px 10px 5px;
+
+								button {
+									width: 40%;
+									margin-bottom: 10px;
+								}
+							}
+
+							li:nth-child(even) {
+								background-color: #f8f5fc;
+							}
+						}
+
+						#accordion {
+							.panel-heading {
+								padding-left: 0px;
+								padding-right: 0px;
+							}
+							h4.panel-title {
+								letter-spacing: 0.3em;
+								text-transform: uppercase;
+								margin-top: 5px;
+								font-family: Brandon-Bold;
+								margin-bottom: 10px;
+								font-size: 14px;
+							}
+						}
+					}
+				}
+			}
+
+
+		}
+
+		.panel-group.archivedSection {
+			margin-top: 30px;
+
+			.panel-default.panel {
+				.panel-heading {
+					background-color: #ffffff;
+					cursor: pointer;
+
+
+					.panel-title {
+						text-align: center;
+						letter-spacing: 0.3em;
+						text-transform: uppercase;
+					}
+				}
+			}
+		}
+
+	}
+}
+
+@media #{$smExtra} {
+
+	nav .nav-tabs > li > a {
+			height: 90px;
+			font-family: Brandon-Bold;
+		}
+
+}
+
+
+@media #{$md} {
+
+	nav .nav-tabs > li > a {
+			height: 90px;
+		}
+
+	#inboxTab, #ordersTab {
+		.infoBanner {
+			width: 100%;
+			margin-bottom: 30px;
+			padding: 20px;
+			border-radius: 5px;
+			border: 1px solid #ffffff;
+			color: #ffffff;
+			background: -webkit-linear-gradient(90deg, #9086ef 10%, #b3aae8 90%); /* Chrome 10+, Saf5.1+ */
+			background:    -moz-linear-gradient(90deg, #fc00ff 10%, #00dbde 90%); /* FF3.6+ */
+			background:     -ms-linear-gradient(90deg, #fc00ff 10%, #00dbde 90%); /* IE10 */
+			background:      -o-linear-gradient(90deg, #fc00ff 10%, #00dbde 90%); /* Opera 11.10+ */
+			background:         linear-gradient(90deg, #9086ef 10%, #b3aae8 90%); /* W3C */
+
+			h6 {
+				margin: 0;
+				text-align: center;
+
+				img.img-responsive {
+					width: 75%;
+					margin-left: 12%;
+					@include transform(translateX(-12%));
+
+				}
+			}
+
+			h5 {
+				font-family: Brandon-Bold;
+				color: #ffffff;
+			}
+
+			p {
+				text-align: center;
+				padding: 0px;
+			}
+		}
+	}
+
+
+	.vendorHomeWrapper {
+		padding-left: 20%;
+		padding-right: 20%;
+
+		.tab-content {
+
+			nav {
+			background-color: $darkpurple;
+			color: #ffffff;
+			border-radius: 5px;
+
+				.navbar-brand  {
+					color: #ffffff;
+					font-size: 16px;
+					margin-top: 0px;
+					width: 100%;
+					img {
+						display: none;
+					}
+				}
+
+				ul.navbar-nav.venueNavToggle {
+					padding-right: 15px;
+					
+				}
+
+				.collapse.navbar-collapse.venueNav {
+					ul.nav.navbar-nav {
+						li {
+							a { 
+							color: #ffffff;
+							} 
+						}
+					}
+				}
+			}
+
+			.panel-group {
+				border: 1px solid $purple;
+				border-radius: 5px;
+
+				.panel-default.panel {
+					margin-top: 0px;
+
+
+					.panel-heading {
+	
+
+
+						button.businessEntryButton.btn-block.btn {
+
+							width: 50%;
+							margin-left: 25%;
+						}
+
+					}
+
+					.panel-collapse.vendorOption {
+
+
+						button.publishButton.btn-block.btn.btn-primary {
+							width: 50%;
+							margin-left: 25%;
+						}
+
+						.panel.panel-default.packages {
+							margin-right: 10%;
+							margin-left: 10%;
+							margin-top: 20px;
+							border: 1px solid #ffffff;
+
+							.panel-heading {
+								font-size: 18px;
+							}
+						}
+
+
+						button.btn.btn-default.btn-block {
+
+							width: 50%;
+							margin-left: 25%;
+
+						}
+
+
+						.list-group {
+
+
+							li {
+
+								button {
+									font-size: 15px;
+								}
+							}
+
+						}
+
+					}
+				}
+			}
+
+
+		}
+
+		.panel-group.archivedSection {
+			margin-top: 30px;
+
+			.panel-default.panel {
+				.panel-heading {
+					background-color: #ffffff;
+					cursor: pointer;
+
+
+					.panel-title {
+						text-align: center;
+						letter-spacing: 0.3em;
+						text-transform: uppercase;
+					}
+				}
+			}
+		}
+
+	}
+	ul.nav.navbar-nav.navbar-right#dashboardHelp{
+		margin-right: 0px;
+	}
+}
+
+
+@media #{$lg} {
+
+	
+}

@@ -1,0 +1,233 @@
+  
+@media #{$xs} {
+  .mobileFilterWrapper {
+    	position: absolute;
+    	height: 100%; 
+    	top: 0px;
+    	border-top: 1px solid #ffffff;
+
+    	form {
+    		.filterSelect {
+    			padding: 10px;
+    			border-top: 1px solid #ffffff;
+    			@include transition(0.5s all);
+    			cursor: pointer;
+                color: #ffffff;
+
+                span {
+                    font-size: 10px;
+                    letter-spacing: 0.1em;
+                }
+    		}
+
+             .filterSelect:nth-child(1) {
+                border-top: none;
+             }
+
+             .filterSelect.active {
+                background-color: #ffffff;
+                color: $purple;
+                border-top: 1px solid $purple;
+                @include transition(0.5s all);
+                background-color: #fcfcfc;
+                font-family: Brandon-Bold;
+
+                &:hover {
+                   background-color: lighten($purple, 10%);
+                   color: #ffffff;
+                }
+             }
+
+
+    		.filterSelect.servicesSpecial {
+    			background-color: #ffb41d;
+    		}
+
+
+
+    		.filterSelect.moreFilters {
+    			background-color: $darkpurple;
+    			font-family: Brandon-Bold;
+    		}
+
+    		.badgeTrash {
+    			@include transition(0.5s all);
+    		}
+
+    		.badgeTrash:hover {
+    			color: $purple;
+    		}
+
+
+
+    		textarea::-webkit-input-placeholder {  
+    			color: #fff;
+    		}
+
+    		#searchFilterDate {
+    			border-radius: 5px;
+    			box-shadow: none;
+    			margin-top: 5px;
+    		}
+
+    		.fa.fa-calendar {
+    			margin-left: 5px;
+    			color: #ffffff;
+    			font-size: 20px;
+    		}
+
+    		textarea.searchKeywords {
+    			background-color: transparent;
+    			background-color: darken($purple, 5%);
+                border: none;
+    			color: #fff;
+    			letter-spacing: 0.2em;
+    			width: 100%;
+    			height: 100px;
+    			padding-left: 10px;
+    		}
+
+    		.filterSelectOptions {
+                display: none;
+                border-bottom: 1px solid #ffffff;
+                background-color: $darkpurple;
+                
+    			.moreFiltersMenu {
+    					list-style-type: none;
+    					-webkit-padding-start: 0px;
+    					text-transform: uppercase;
+
+    					
+
+    					li {
+
+    				 		font-family: Brandon;
+    				 		color: #fff;
+    				 		text-shadow: 2px 2px $darkpurple;
+    				 		padding: 10px;
+    				 		font-size: 14px;
+    				 		letter-spacing: 2px;
+    				 		transition: 0.5s;
+    				 		text-decoration: none;
+    					}
+
+    					li.moreFiltersCategory {
+    						font-size: 16px;
+    						color: $purple;
+    						letter-spacing: 0.3em;
+    						border-bottom: 1px solid rgba(255,255,255,0.3);
+    						width: 90%;
+    						margin-left: 5%;
+    					}
+
+    					a {
+    				 		
+
+
+
+    						 	&:hover {
+    						 	 	color: $green;
+    						 	 }
+    			 		}
+    			}
+
+
+    			h3 {
+    				text-align: center;
+    				font-family: Brandon-Bold;
+    				font-size: 15px;
+    				letter-spacing: 0.2em;
+    				color: #ffffff;
+    				margin-top: 0px;
+    				padding-top: 10px;
+    			}
+
+    			
+
+        		.filterSelectOption {
+        			padding: 10px;
+        			background-color: $darkpurple;
+        			border-bottom: 1px solid rgba(255,255,255,0.2);
+        			@include transition(0.5s all);
+
+        			&:hover {
+        				background-color: lighten($darkpurple, 10%);
+        				cursor: pointer;
+        			}
+
+        		}
+
+        		.filterSelectOption.childrensParty {
+        			border-top: 1px solid #ffffff;
+        		}
+
+        		
+            	.checkbox {
+            		margin: 0px;
+            	}
+
+            	.checkbox input {
+            		margin-top: 2px;
+            	}
+
+    		}
+
+
+				.filterSlider {
+					width: 60%;
+					position: relative;
+					margin-left: 50%;
+					-webkit-transform: translateX(-50%);
+					margin-top: 5px;
+					margin-bottom: 20px;
+
+				}
+
+				input.amountLabel {
+						background-color: transparent;
+						border: none;
+						color: $purple;
+						width: 100%;
+						margin-top: 10px;
+						font-family: Brandon-Bold;
+						letter-spacing: 0.2em;
+						text-align: center;
+						font-size:24px;
+				}
+
+
+   	  	}
+
+    	
+    }
+
+    .mobileFilterWrapper.venues .filterSelect {
+    	&:hover {
+    		background-color: lighten($purple, 10%);
+    	}
+    }
+
+    .mobileFilterWrapper.services .filterSelect {
+    	&:hover {
+    		background-color: lighten($yellow, 10%);
+    	}
+    }
+
+    .mobileFilterWrapper.venues  {
+	background-color: $purple;
+	width: 250px;
+	left: -250px;
+	top: 0px;	   
+	border-right: 1px solid #ffffff;     
+	}
+
+	.mobileFilterWrapper.services {
+	background-color: $yellow;
+	width: 250px;
+	right: -250px;
+	top: 0px;
+	border-left: 1px solid #ffffff; 	        
+	}
+
+
+}

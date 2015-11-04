@@ -1,0 +1,61 @@
+/* COLOR PALETTE */
+
+$green: #65ce83;
+$purple: #8c8cf4;
+$lightpurple: #bbbbf2;
+$yellow: #ffcc00;
+$darkpurple: #36303f;
+$pink: rgb(255, 197, 253);
+$border-color: #7b7b7c;
+$light: #ffffff;
+$dark: #151516;
+$sidebar: #364356;
+
+
+
+
+/*SOCIAL ICONS */
+$facebook: #465997;
+$twitter: #3aacf9;
+$google: #000000;
+
+
+
+/* RESPONSIVE POINTS */
+
+/* Font Faces */
+
+
+@font-face {
+    font-family: Brandon;
+    src: url(../fonts/brandon_re.ttf);
+}
+
+
+@font-face {
+    font-family: Brandon-Bold;
+    src: url(../fonts/Brandon_bld.otf);
+}
+
+
+
+/*Icomoon */
+ @font-face {
+        font-family: 'icomoon';
+        src:url('../fonts/icons/icomoon.eot');
+        src:url('../fonts/icons/icomoon.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/icons/icomoon.woff') format('woff'),
+            url('../fonts/icons/icomoon.ttf') format('truetype'),
+            url('../fonts/icons/icomoon.svg#icomoon') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+
+/* MEDIA QUERY BREAKPOINT */
+
+$xs: "only screen and (min-width : 300px)";
+$sm: "only screen and (min-width : 480px)";
+$smExtra: "only screen and (min-width : 680px)";
+$md: "only screen and (min-width : 992px)";
+$lg: "only screen and (min-width : 1200px)";

@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<!-- saved from url=(0089)file:///Users/Stephen/Documents/RidgeBox/Bananabel/Development/frontend2/searchFinal.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>Bananabel</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="file:///Users/Stephen/Documents/RidgeBox/Bananabel/Development/frontend2/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="file:///Users/Stephen/Documents/RidgeBox/Bananabel/Development/frontend2/css/slider.css" rel="stylesheet">
+    <link href="file:///Users/Stephen/Documents/RidgeBox/Bananabel/Development/frontend2/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+  </head>
+
+<body>
+  <div id="siteWrapper"> <!-- WRAPS PAGE INCLUDING MOBILE MENU -->
+    <div id="siteViewport" style="height: 1974px;"> <!--WRAPS PAGE EXCLUDING MOBILE MENU-->
+      <div id="topStripes"></div>
+
+      <!-- HIDDEN MOBILE MENU -->
+
+      <div id="mobileMenu">
+        <ul>
+          <li class="navMessages">
+            <i class="fa fa-envelope"></i>2 NEW MESSAGES
+          </li>
+          <li class="navMenuTitle">
+            ACCOUNT
+          </li>
+          <li>
+            <a href="file:///Users/Stephen/Documents/RidgeBox/Bananabel/Development/frontend2/searchFinal.html#join" data-toggle="modal">Profile</a>
+          </li>
+          <li>
+            <a href="file:///Users/Stephen/Documents/RidgeBox/Bananabel/Development/frontend2/searchFinal.html#about">Payment</a>
+          </li>                  
+          <li> 
+            <a href="file:///Users/Stephen/Documents/RidgeBox/Bananabel/Development/frontend2/searchFinal.html#contact">Notifications</a>
+          </li>
+          <li> 
+            <a href="file:///Users/Stephen/Documents/RidgeBox/Bananabel/Development/frontend2/searchFinal.html#contact">Verifications</a>
+          </li>
+          <li> 
+            <a href="file:///Users/Stephen/Documents/RidgeBox/Bananabel/Development/frontend2/searchFinal.html#contact">Change Password</a>
+          </li>
+          <li class="navMenuTitle">
+            HISTORY
+          </li>
+          <li> 
+            <a href="file:///Users/Stephen/Documents/RidgeBox/Bananabel/Development/frontend2/searchFinal.html#contact">Your Reviews</a>
+          </li>
+          <li> 
+            <a href="file:///Users/Stephen/Documents/RidgeBox/Bananabel/Development/frontend2/searchFinal.html#contact">Order History</a>
+          </li>
+        </ul>
+      </div> <!-- end of #homeMobileMenu"-->
+
+
+      <!-- HEADER -->
+
+      <div class="header container-fluid">
+       <div class="row">
+         <div id="headerLogo" class="col-xs-6 col-sm-5"></div> 
+         <div class="col-xs-1 col-xs-offset-1 col-sm-offset-2 col-md-offset-1 headerBox searchBoxLabel" id="searchBox">
+           <span class="fa-stack fa-md searchGlass">
+             <i class="fa-sm fa-stack-1x fa fa-remove"></i>
+           </span>
+         </div>
+         <div class="col-xs-1 headerBox eventsBoxLabel" id="eventsBox">
+          <span class="fa-stack fa-md eventCake">
+            <i class="fa fa-birthday-cake fa-sm fa-stack-1x" id="userHeaderIcon"></i>
+          </span>
+         </div>
+         <div class="col-xs-1 headerBox favoritesBoxLabel" id="favoritesBox">
+            <span class="fa-stack fa-md favoritesHeart">
+              <i class="fa fa-heart fa-sm fa-stack-1x" id="userHeaderIcon"></i>
+            </span>
+         </div>
+         <div class="toggle-nav hidden-xs visible-md col-xs-3 headerBox" id="desktopUserBox">
+           <div class="desktopUserBoxArea">
+             <div class="userBoxNameArea">
+                <span>HELLO ALEX <i class="fa fa-caret-right userBoxArrow"></i></span><br>
+                <div class="userBoxMessagesText"><i class="fa fa-envelope"></i>2 NEW MESSAGES</div>
+             </div>          
+              <div class="userBoxAvatarArea">
+                <img class="userAvatar img-circle" src="./Bananabel_files/userAvatar.png">
+              </div>
+           </div>
+         </div>
+         <div class="toggle-nav col-xs-2 hidden-md hidden-lg headerBox" id="mobileUserBox">
+           <div class="userAvatarArea">
+              <img class="userAvatar img-circle" src="./Bananabel_files/userAvatar.png">
+              <i class="fa fa-caret-right userBoxArrow"></i>
+           </div>
+         </div>
+      </div>
+     </div> <!--END OF HEADER -->
+     <div class="mobileHeaderBoxExpand">
+        <div class="searchBoxExpand boxExpandLabel container-fluid">
+          <textarea class="col-xs-12" id="searchBoxSearch" placeholder="ENTER SEARCH FOR VENUES &amp; SERVICES"></textarea>
+          <div class="searchEventArea col-xs-12">
+            <div class="searchForEvent">
+              <div class="searchForEventButton">
+                <i class="fa fa-birthday-cake"></i>
+                <span>SEARCH FOR SPECIFIC EVENT</span>
+                <i class="fa fa-caret-down"></i>
+              </div> 
+              <ul class="searchEventList">
+                <li class="clearSearchForEvent searchForEventItem hidden-xs"><span><i class="fa fa-times-circle"></i>CLEAR SELECTED EVENT</span>
+                </li><li class="searchForEventItem"><span>Billy's Birthday Party<span></span></span></li>
+                <li class="searchForEventItem"><span>Tara's Recital Afterparty<span></span></span></li>
+                <li class="searchForEventItem"><span>Baby Alex's 1st Birthday<span></span></span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="eventsBoxExpand boxExpandLabel">
+        </div>
+        <div class="favoritesBoxExpand boxExpandLabel">
+        </div>
+     </div>
+     
+
+
+
+      <!-- PAGE CONTENT -->
+
+        <div class="pageWrapper"> <!-- WRAPPER INCLUDES FILTERS -->
+          <div class="pageViewport"> <!-- WRAPPER EXCLUDES FILTERS -->
+
+           
+            <div class="row moreFilters hidden-md hidden-lg">
+              <div class="moreFiltersButton col-xs-8 col-xs-offset-2">
+                <span>MORE FILTERS<i class="fa fa-chevron-down"></i></span>
+              </div>
+            </div> 
+
+            <div id="venuesSearchFilter" class="hidden-xs hidden-sm">
+               <form action="file:///Users/Stephen/Documents/RidgeBox/Bananabel/Development/frontend2/searchFinal.html#" method="POST"> 
+                    <div class="searchSelect venuesSearchSelect" id="venuesSearchTopAreaLabel">
+                        <div id="userEventSelect">
+                          <i class="fa fa-birthday-cake"></i><span>SELECT YOUR EVENT</span><i class="fa fa-caret-down"></i>
+                        </div>
+                         <div id="searchCalendarSelect">
+                          <i class="fa fa-calendar"></i><span>July 21st, 2014 <br> DAYTIME</span>
+                        </div>
+                    </div> 
+                    <div class="searchSelect venuesSearchSelect" id="venuesSearchCityLabel">
+                        <span>CITY<i class="fa fa-chevron-down homeDownArrows rotate"></i></span>
+                      </div> 
+                      <div class="venuesSearchOptions" id="venuesSearchCityOptions">
+                        <div class="venuesSearchOptions venuesSearchOption venuesSearchCityOption">
+                          <span>NEW YORK</span>
+                        </div>
+                        <div class="venuesSearchOptions venuesSearchOption venuesSearchCityOption">
+                          <span>CHICAGO</span>
+                        </div>    
+                      </div>
+                    <input id="searchCitySelectInput" type="hidden">
+
+                    <div class="searchSelect venuesSearchSelect" id="venuesSearchNeighborhoodLabel">
+                        <span>NEIGHBORHOOD<i class="fa fa-chevron-down homeDownArrows rotate"></i></span>
+                      </div> 
+                      <div class="venuesSearchOptions" id="venuesSearchNeighborhoodOptions">
+                        <div class="venuesSearchOptions venuesSearchOption venuesSearchNeighborhoodOption">
+                          <span>MANHATTAN</span>
+                        </div>
+                        <div class="venuesSearchOptions venuesSearchOption venuesSearchNeighborhoodOption">
+                          <span>BROOKLYN</span>
+                        </div>
+                         <div class="venuesSearchOptions venuesSearchOption venuesSearchNeighborhoodOption">
+                          <span>BRONX</span>
+                        </div>
+                        <div class="venuesSearchOptions venuesSearchOption venuesSearchNeighborhoodOption">
+                          <span>STATEN ISLAND</span>
+                        </div> 
+                         <div class="venuesSearchOptions venuesSearchOption venuesSearchNeighborhoodOption">
+                          <span>QUEENS</span>
+                        </div>
+                      </div>
+                    <input id="searchNeighborhoodSelectInput" type="hidden">
+
+                     <div class="searchSelect venuesSearchSelect" id="venuesSearchGuestsLabel">
+                        <span>GUESTS<i class="fa fa-chevron-down homeDownArrows rotate"></i></span>
+                      </div> 
+
+                    <div id="homeGuestsSearchOptions">
+                      <div class="homeGuestsOption">
+                              <div class="homeGuestsOptionArea"> 
+                                <span>SELECT # OF CHILDREN</span>
+                                <div class="inputArea">0 
+                                    <input id="homeChildrenSlider" type="text" class="span2" value="" data-slider-min="0" data-slider-max="250" data-slider-step="5" data-slider-value="[25,50]">&nbsp;&nbsp;250+
+                                </div>
+                              </div>
+                      </div>
+
+                       <div class="homeGuestsOption">
+                               <div class="homeGuestsOptionArea"> 
+                                <span>SELECT # OF ADULTS</span>
+                                0 <input id="homeAdultSlider" type="text" class="span2" value="" data-slider-min="0" data-slider-max="250" data-slider-step="5" data-slider-value="[25,50]">&nbsp;&nbsp;250+
+                              </div>
+                      </div>
+                    </div>
+
+                    <div class="searchSelect venuesSearchSelect" id="venuesSearchBudgetLabel">
+                        <span>BUDGET<i class="fa fa-chevron-down homeDownArrows rotate"></i></span>
+                    </div> 
+
+                    <div id="homeGuestsBudgetOptions">
+                      <div class="homeGuestsOption">
+                              <div class="homeGuestsOptionArea"> 
+                                <span>SELECT BUDGET</span>
+                                <div class="inputArea">$0
+                                    <input id="budgetsSlider" type="text" class="span2" value="" data-slider-min="0" data-slider-max="250" data-slider-step="5" data-slider-value="[500,1000]">&nbsp;&nbsp;$50,000+
+                                </div>
+                              </div>
+                      </div>
+                    </div>
+                    <div class="searchSelect venuesSearchSelect" id="venuesSearchKeywordsLabel">
+                        <textarea id="searchKeywords" placeholder="ENTER KEYWORDS"></textarea>
+                    </div>
+                    <div class="searchSelect venuesSearchSelect" id="venuesSearchMoreFiltersLabel">
+                        <span>MORE FILTERS<i class="fa fa-chevron-right homeDownArrows rotate"></i></span>
+                    </div> 
+                </form> 
+            </div>
+
+            <div class="venuesMoreFiltersWrapper">
+            </div>
+            
+            <div id="searchContentArea">
+                <div class="row venuesOrServices"> 
+                  <div class="venuesSelect col-xs-6 col-md-5 toggleFilters venuesSelectSelected">
+                    <span> VENUES</span>
+                  </div>
+                  <div class="servicesSelect col-xs-6 col-md-5 col-md-offset-2 toggleFilters">
+                     <span>SERVICES</span>
+                  </div>
+                </div>
+
+               
+
+
+                <div class="container-fluid searchResults">
+                 <div class="row">
+                  <div class="searchResultsItem col-xs-12 col-md-5">
+                    <div class="resultItemImage">
+                      <div class="resultItemFeatured">
+                        <span>FEATURED</span>
+                      </div>
+                      <div class="resultItemArrow">
+                        <i class="fa fa-arrow-circle-o-right"></i>
+                      </div>
+                      <div class="resultItemFavorite">
+                        <i class="fa fa-heart"></i>
+                      </div>
+                    </div>
+                    <div class="resultItemDescriptionArea">
+                      <div class="descriptionSpan">
+                        <div class="resultItemTitle">
+                          620 Loft &amp; Garden
+                        </div>
+                        <div class="resultItemStars">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div> <!-- End of Search Item --> 
+                  <div class="searchResultsItem col-xs-12 col-md-5">
+                    <div class="resultItemImage">
+                      <div class="resultItemFeatured">
+                        <span>FEATURED</span>
+                      </div>
+                      <div class="resultItemArrow">
+                        <i class="fa fa-arrow-circle-o-right"></i>
+                      </div>
+                      <div class="resultItemFavorite">
+                        <i class="fa fa-heart"></i>
+                      </div>
+                    </div>
+                    <div class="resultItemDescriptionArea">
+                      <div class="descriptionSpan">
+                        <div class="resultItemTitle">
+                          620 Loft &amp; Garden
+                        </div>
+                        <div class="resultItemStars">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div> <!-- End of Search Item --> 
+                </div> <!-- End of Search Row --> 
+                <div class="row">
+                  <div class="searchResultsItem col-xs-12 col-md-5">
+                    <div class="resultItemImage">
+                      <div class="resultItemFeatured">
+                        <span>FEATURED</span>
+                      </div>
+                      <div class="resultItemArrow">
+                        <i class="fa fa-arrow-circle-o-right"></i>
+                      </div>
+                      <div class="resultItemFavorite">
+                        <i class="fa fa-heart"></i>
+                      </div>
+                    </div>
+                    <div class="resultItemDescriptionArea">
+                      <div class="descriptionSpan">
+                        <div class="resultItemTitle">
+                          620 Loft &amp; Garden
+                        </div>
+                        <div class="resultItemStars">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div> <!-- End of Search Item --> 
+                  <div class="searchResultsItem col-xs-12 col-md-5">
+                    <div class="resultItemImage">
+                      <div class="resultItemFeatured">
+                        <span>FEATURED</span>
+                      </div>
+                      <div class="resultItemArrow">
+                        <i class="fa fa-arrow-circle-o-right"></i>
+                      </div>
+                      <div class="resultItemFavorite">
+                        <i class="fa fa-heart"></i>
+                      </div>
+                    </div>
+                    <div class="resultItemDescriptionArea">
+                      <div class="descriptionSpan">
+                        <div class="resultItemTitle">
+                          620 Loft &amp; Garden
+                        </div>
+                        <div class="resultItemStars">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div> <!-- End of Search Item --> 
+                </div> <!-- End of Search Row --> 
+                <div class="row">
+                  <div class="searchResultsItem col-xs-12 col-md-5">
+                    <div class="resultItemImage">
+                      <div class="resultItemFeatured">
+                        <span>FEATURED</span>
+                      </div>
+                      <div class="resultItemArrow">
+                        <i class="fa fa-arrow-circle-o-right"></i>
+                      </div>
+                      <div class="resultItemFavorite">
+                        <i class="fa fa-heart"></i>
+                      </div>
+                    </div>
+                    <div class="resultItemDescriptionArea">
+                      <div class="descriptionSpan">
+                        <div class="resultItemTitle">
+                          620 Loft &amp; Garden
+                        </div>
+                        <div class="resultItemStars">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div> <!-- End of Search Item --> 
+                  <div class="searchResultsItem col-xs-12 col-md-5">
+                    <div class="resultItemImage">
+                      <div class="resultItemFeatured">
+                        <span>FEATURED</span>
+                      </div>
+                      <div class="resultItemArrow">
+                        <i class="fa fa-arrow-circle-o-right"></i>
+                      </div>
+                      <div class="resultItemFavorite">
+                        <i class="fa fa-heart"></i>
+                      </div>
+                    </div>
+                    <div class="resultItemDescriptionArea">
+                      <div class="descriptionSpan">
+                        <div class="resultItemTitle">
+                          620 Loft &amp; Garden
+                        </div>
+                        <div class="resultItemStars">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div> <!-- End of Search Item --> 
+                </div> <!-- End of Search Row --> 
+              </div> <!-- End of Container Search Results--> 
+            </div>
+
+            <div id="servicesSearchFilter" class="hidden-xs hidden-sm">
+              <form action="file:///Users/Stephen/Documents/RidgeBox/Bananabel/Development/frontend2/searchFinal.html#" method="POST"> 
+                    <div class="searchSelect venuesSearchSelect" id="venuesSearchTopAreaLabel">
+                        <div id="userEventSelect">
+                          <i class="fa fa-birthday-cake"></i><span>SELECT YOUR EVENT</span><i class="fa fa-caret-down"></i>
+                        </div>
+                         <div id="searchCalendarSelect">
+                          <i class="fa fa-calendar"></i><span>July 21st, 2014 <br> DAYTIME</span>
+                        </div>
+                    </div> 
+                    <div class="searchSelect venuesSearchSelect" id="venuesSearchCityLabel">
+                        <span>CITY<i class="fa fa-chevron-down homeDownArrows rotate"></i></span>
+                      </div> 
+                      <div class="venuesSearchOptions" id="venuesSearchCityOptions">
+                        <div class="venuesSearchOptions venuesSearchOption venuesSearchCityOption">
+                          <span>NEW YORK</span>
+                        </div>
+                        <div class="venuesSearchOptions venuesSearchOption venuesSearchCityOption">
+                          <span>CHICAGO</span>
+                        </div>    
+                      </div>
+                    <input id="searchCitySelectInput" type="hidden">
+
+                    <div class="searchSelect venuesSearchSelect" id="venuesSearchNeighborhoodLabel">
+                        <span>NEIGHBORHOOD<i class="fa fa-chevron-down homeDownArrows rotate"></i></span>
+                      </div> 
+                      <div class="venuesSearchOptions" id="venuesSearchNeighborhoodOptions">
+                        <div class="venuesSearchOptions venuesSearchOption venuesSearchNeighborhoodOption">
+                          <span>MANHATTAN</span>
+                        </div>
+                        <div class="venuesSearchOptions venuesSearchOption venuesSearchNeighborhoodOption">
+                          <span>BROOKLYN</span>
+                        </div>
+                         <div class="venuesSearchOptions venuesSearchOption venuesSearchNeighborhoodOption">
+                          <span>BRONX</span>
+                        </div>
+                        <div class="venuesSearchOptions venuesSearchOption venuesSearchNeighborhoodOption">
+                          <span>STATEN ISLAND</span>
+                        </div> 
+                         <div class="venuesSearchOptions venuesSearchOption venuesSearchNeighborhoodOption">
+                          <span>QUEENS</span>
+                        </div>
+                      </div>
+                    <input id="searchNeighborhoodSelectInput" type="hidden">
+
+                     <div class="searchSelect venuesSearchSelect" id="venuesSearchGuestsLabel">
+                        <span>GUESTS<i class="fa fa-chevron-down homeDownArrows rotate"></i></span>
+                      </div> 
+
+                    <div id="homeGuestsSearchOptions">
+                      <div class="homeGuestsOption">
+                              <div class="homeGuestsOptionArea"> 
+                                <span>SELECT # OF CHILDREN</span>
+                                <div class="inputArea">0 
+                                    <input id="homeChildrenSlider" type="text" class="span2" value="" data-slider-min="0" data-slider-max="250" data-slider-step="5" data-slider-value="[25,50]">&nbsp;&nbsp;250+
+                                </div>
+                              </div>
+                      </div>
+
+                       <div class="homeGuestsOption">
+                               <div class="homeGuestsOptionArea"> 
+                                <span>SELECT # OF ADULTS</span>
+                                0 <input id="homeAdultSlider" type="text" class="span2" value="" data-slider-min="0" data-slider-max="250" data-slider-step="5" data-slider-value="[25,50]">&nbsp;&nbsp;250+
+                              </div>
+                      </div>
+                    </div>
+
+                    <div class="searchSelect venuesSearchSelect" id="venuesSearchBudgetLabel">
+                        <span>BUDGET<i class="fa fa-chevron-down homeDownArrows rotate"></i></span>
+                    </div> 
+
+                    <div id="homeGuestsBudgetOptions">
+                      <div class="homeGuestsOption">
+                              <div class="homeGuestsOptionArea"> 
+                                <span>SELECT BUDGET</span>
+                                <div class="inputArea">$0
+                                    <input id="budgetsSlider" type="text" class="span2" value="" data-slider-min="0" data-slider-max="250" data-slider-step="5" data-slider-value="[500,1000]">&nbsp;&nbsp;$50,000+
+                                </div>
+                              </div>
+                      </div>
+                    </div>
+                    <div class="searchSelect venuesSearchSelect" id="venuesSearchKeywordsLabel">
+                        <textarea id="searchKeywords" placeholder="ENTER KEYWORDS"></textarea>
+                    </div>
+                    <div class="searchSelect venuesSearchSelect" id="venuesSearchMoreFiltersLabel">
+                        <span>MORE FILTERS<i class="fa fa-chevron-right homeDownArrows rotate"></i></span>
+                    </div> 
+                </form> 
+                
+            </div>
+          </div> <!-- End of Page Canvas--> 
+        </div> <!-- End of Page Wrapper--> 
+
+
+
+        </div><!--End of Viewport-->
+
+
+ 
+
+    </div> <!--End of Wrapper-->
+
+    <!--Modals-->
+    <div class="modal fade" id="join" role="dialog" style="display: none;">
+      <div class="modal-dialog modal-dialog-center" style="margin-top: -84px; margin-left: -150px;">
+        <div class="modal-content" id="joinModal" style="max-height: 675px;">
+          <div class="joinButtons" id="joinFacebook">
+            <p> <i class="fa fa-facebook"></i>Sign Up With Facebook</p>
+          </div>
+          <div class="joinButtons" id="joinGoogle">
+            <p> <i class="fa fa-google"></i>Sign Up With Google</p>
+          </div>
+          <div class="joinButtons" id="useYourEmail">
+            <p> <i class="fa fa-envelope"></i>Use Your Email</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./Bananabel_files/jquery.js"></script>
+    <script src="./Bananabel_files/bootstrap.js"></script>
+    <script src="./Bananabel_files/bootstrap-slider.js"></script>
+    <script src="./Bananabel_files/angular.js"></script>
+    <script src="./Bananabel_files/scripts.js"></script>
+      <script>
+
+
+    $("#homeChildrenSlider").slider({});
+      $("#homeAdultSlider").slider({});
+
+      $("#budgetsSlider").slider({});
+
+      $('#homeGuestsBudgetOptions > div:nth-child(1) > div > div > div').css("width", "100px");
+
+
+      $('#homeGuestsSearchOptions > div:nth-child(1) > div > div > div').css("width", "100px");
+
+      $('#homeGuestsSearchOptions > div:nth-child(2) > div > div').css("width", "100px");
+
+
+$("#venuesSearchBudgetLabel").click(function() {
+                              $("#homeGuestsBudgetOptions").slideToggle(500);
+                            });
+
+$("#venuesSearchGuestsLabel").click(function() {
+                              $("#homeGuestsSearchOptions").slideToggle(500);
+                            });
+
+  $("#venuesSearchCityLabel").click(function() {
+                              $("#venuesSearchCityOptions").slideToggle(500);
+                            });
+
+  $('.venuesSearchCityOption').click(function() {
+                              var cityName = $(this).find('span').text();
+                              $('#venuesSearchCityLabel>span').text(cityName);
+                              $('#searchCitySelectInput').val(cityName);
+                              $('#venuesSearchCityOptions').hide();
+    });
+
+   $("#venuesSearchNeighborhoodLabel").click(function() {
+                              $("#venuesSearchNeighborhoodOptions").slideToggle(500);
+                            });
+
+  $('.venuesSearchNeighborhoodOption').click(function() {
+                              var cityName = $(this).find('span').text();
+                              $('#venuesSearchNeighborhoodLabel>span').text(cityName);
+                              $('#searchNeighborhoodSelectInput').val(cityName);
+                              $('#venuesSearchNeighborhoodOptions').hide();
+    });
+
+
+
+
+
+
+    /*====================================
+=            ON DOM READY            =
+====================================*/
+$(function() {
+$('.toggleFilters').click(function() {
+// Calling a function in case you want to expand upon this.
+toggleNavigation();
+});
+});
+
+
+
+    if ($(window).width() < 992) {
+        $('.headerBox').click(function () {
+          if ($(this).hasClass("searchBoxLabel")) {
+             $(".searchBoxExpand").slideToggle();
+          } 
+
+          else if ($(this).hasClass("eventsBoxLabel")) {
+            $(".eventsBoxExpand").slideToggle();
+          }
+
+          else if  ($(this).hasClass("favoritesBoxLabel")) {
+            $(".favoritesBoxExpand").slideToggle();
+          }
+        });
+    }
+
+
+
+
+$(".searchForEvent").click(function () {
+  $(".searchEventList").slideToggle();
+});
+
+/*========================================
+=            CUSTOM FUNCTIONS            =
+========================================*/
+function toggleNavigation() {
+if ($('.pageWrapper').hasClass('show-nav')) {
+// Do things on Nav Close
+$('.pageWrapper').removeClass('show-nav');
+} else {
+// Do things on Nav Open
+$('.pageWrapper').addClass('show-nav');
+}
+
+//$('#site-wrapper').toggleClass('show-nav');
+}
+
+     $('.searchForEventItem').click(function() {
+          var searchForEventSelection = $(this).find('span').text();
+          $('.searchForEventButton').find('span').text(searchForEventSelection);
+          setTimeout(function () {
+          $('.clearSearchForEvent').removeClass('hidden-xs');
+          }, 500);
+        });
+
+     $('.clearSearcForEvent').click(function(){
+         $('.searchForEventButton').find('span').text('No Event Selected');
+         %(this).addClass("hidden-xs");
+     });
+</script>
+
+
+  
+  
+</body></html>
